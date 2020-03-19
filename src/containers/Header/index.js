@@ -17,10 +17,10 @@ function Header() {
     `
   );
   return (
-    <header>
+    <div style={{ marginBottom: '1.5rem' }}>
       <HeaderTitle>{site.siteMetadata.title}</HeaderTitle>
       <HeaderSubtitle>{site.siteMetadata.description}</HeaderSubtitle>
-    </header>
+    </div>
   );
 }
 

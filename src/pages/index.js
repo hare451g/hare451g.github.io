@@ -4,9 +4,39 @@ import AppLayout from '../layouts/AppLayout';
 function IndexPage() {
   return (
     <AppLayout>
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+      <h3>Threads</h3>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas.
+            </p>
+          </li>
+          <li>
+            <a href="#">About</a>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas.
+            </p>
+          </li>
+          <li>
+            <a href="#">Clients</a>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas.
+            </p>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas.
+            </p>
+          </li>
+        </ul>
+      </nav>
     </AppLayout>
   );
 }
