@@ -4,6 +4,7 @@ import moment from 'moment';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
 import { PostWrapper, PostTimestamp, PostTitle } from './styled';
+import formats from '../../constants/formats';
 
 function ArticleList() {
   const data = useStaticQuery(
@@ -42,7 +43,9 @@ function ArticleList() {
       <Link key={id} to={slug} style={{ textDecoration: 'none' }}>
         <PostWrapper>
           <PostTimestamp>
-            {moment(date, 'DD-MM-YYYY').format('dddd, DD/MM/YYYY - hh:mm')}
+            {moment(date, formats.FRONT_MATTER_DATE).format(
+              formats.ARTICLE_TIMESTAMP
+            )}
           </PostTimestamp>
           <PostTitle>{title}</PostTitle>
         </PostWrapper>
