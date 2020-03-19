@@ -1,5 +1,7 @@
 import React from 'react';
+
 import SEO from '../containers/SEO';
+import ArticleList from '../containers/ArticleList';
 import AppLayout from '../layouts/AppLayout';
 
 function IndexPage() {
@@ -7,38 +9,7 @@ function IndexPage() {
     <AppLayout>
       <SEO title={'Home'} />
       <h3>Threads</h3>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-            <p>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas.
-            </p>
-          </li>
-          <li>
-            <a href="#">About</a>
-            <p>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas.
-            </p>
-          </li>
-          <li>
-            <a href="#">Clients</a>
-            <p>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas.
-            </p>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
-            <p>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas.
-            </p>
-          </li>
-        </ul>
-      </nav>
+      <ArticleList />
     </AppLayout>
   );
 }

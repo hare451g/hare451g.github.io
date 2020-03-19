@@ -5,9 +5,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     min-height: 100%;
     font-size: 16px;
+    margin: 0;
   }
   html {
-    height: 100%;
+    height: 100vh;
   }
   
   h1, h2, h3, h4, h5, h6 {

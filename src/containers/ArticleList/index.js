@@ -1,17 +1,54 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import moment from 'moment';
 
-function ArticleList({ children }) {
-  return (
-    <>
-      <main>{children}</main>
-    </>
+import { useStaticQuery, graphql, Link } from 'gatsby';
+
+import { PostWrapper, PostTimestamp, PostTitle } from './styled';
+
+function ArticleList() {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+          edges {
+            node {
+              id
+              excerpt
+              frontmatter {
+                date
+                description
+                title
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `
   );
-}
 
-ArticleList.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+  const posts = data.allMarkdownRemark.edges;
+
+  return posts.map(({ node }) => {
+    const {
+      id,
+      frontmatter: { date, title },
+      fields: { slug },
+    } = node;
+
+    return (
+      <Link key={id} to={slug} style={{ textDecoration: 'none' }}>
+        <PostWrapper>
+          <PostTimestamp>
+            {moment(date, 'DD-MM-YYYY').format('dddd, DD/MM/YYYY - hh:mm')}
+          </PostTimestamp>
+          <PostTitle>{title}</PostTitle>
+        </PostWrapper>
+      </Link>
+    );
+  });
+}
 
 export default ArticleList;
