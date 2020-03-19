@@ -1,9 +1,11 @@
 import React from 'react';
+import SEO from '../containers/SEO';
 import AppLayout from '../layouts/AppLayout';
 
 function IndexPage() {
   return (
     <AppLayout>
+      <SEO title={'Home'} />
       <h3>Threads</h3>
       <nav>
         <ul>
