@@ -27,6 +27,7 @@ const AppLayoutWrapper = styled.div`
   footer {
     grid-row-start: 3;
     grid-row-end: 4;
+    padding-top: 2rem;
     padding-bottom: 1rem;
   }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 import { HeaderTitle, HeaderSubtitle } from './styled';
 
@@ -18,7 +18,9 @@ function Header() {
   );
   return (
     <div style={{ marginBottom: '1.5rem' }}>
-      <HeaderTitle>{site.siteMetadata.title}</HeaderTitle>
+      <Link to="/">
+        <HeaderTitle>{site.siteMetadata.title}</HeaderTitle>
+      </Link>
       <HeaderSubtitle>{site.siteMetadata.description}</HeaderSubtitle>
     </div>
   );

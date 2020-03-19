@@ -22,6 +22,18 @@ const PostTitle = styled.div`
   font-weight: 800;
   font-size: 1.75rem;
   color: #3d3d3d;
+
+  :hover {
+    color: #2196f3;
+  }
 `;
 
-export { PostWrapper, PostTimestamp, PostTitle };
+const PostDescription = styled.div`
+  padding: 0.5rem 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #3d3d3d;
+`;
+export { PostWrapper, PostTimestamp, PostTitle, PostDescription };

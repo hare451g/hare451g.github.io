@@ -44,7 +44,7 @@ const MainArticle = styled.main`
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: bold;
-    color: #3d3d3d;
+    color: #2196f3;
   }
 
   pre {

@@ -3,8 +3,14 @@ import moment from 'moment';
 
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
-import { PostWrapper, PostTimestamp, PostTitle } from './styled';
 import formats from '../../constants/formats';
+
+import {
+  PostWrapper,
+  PostTimestamp,
+  PostTitle,
+  PostDescription,
+} from './styled';
 
 function ArticleList() {
   const data = useStaticQuery(
@@ -35,7 +41,7 @@ function ArticleList() {
   return posts.map(({ node }) => {
     const {
       id,
-      frontmatter: { date, title },
+      frontmatter: { date, title, description },
       fields: { slug },
     } = node;
 
@@ -48,6 +54,7 @@ function ArticleList() {
             )}
           </PostTimestamp>
           <PostTitle>{title}</PostTitle>
+          <PostDescription>{description}</PostDescription>
         </PostWrapper>
       </Link>
     );

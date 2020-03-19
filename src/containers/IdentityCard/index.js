@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 import {
   IdentityCardWrapper,
@@ -34,7 +34,9 @@ function IdentityCard() {
         <img src={authorThumbnail.publicURL} alt={siteMetadata.author} />
       </AuthorThumbnailWrapper>
       <AuthorDescriptionWrapper>
-        <AuthorName>{siteMetadata.author}</AuthorName>
+        <Link to="/about">
+          <AuthorName>{siteMetadata.author}</AuthorName>
+        </Link>
         <AuthorIntro>{siteMetadata.authorShortIntro}</AuthorIntro>
       </AuthorDescriptionWrapper>
     </IdentityCardWrapper>
