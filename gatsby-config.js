@@ -5,8 +5,11 @@ module.exports = {
     author: `Hendra 'hare' Sadewa`,
     authorShortIntro: 'FOSS and JavaScript Enthusiast, addicted to ThinkPads',
     twitter: `@sadevva_`,
-    instagram: `@sadevva_`,
-    linkedIn: `https://www.linkedin.com/in/hendra-sadewa/`,
+    instagram: `sadevva_`,
+    linkedIn: `hendra-sadewa`,
+    linkedInURL: `https://www.linkedin.com/in/hendra-sadewa/`,
+    twitterURL: `https://twitter.com/sadevva_`,
+    instagramURL: `https://www.instagram.com/sadevva_/`,
     email: `hendrasadewa30@gmail.com`,
   },
   plugins: [
