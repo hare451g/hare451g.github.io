@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "hare451g.github.io",
+  "private": false,
+  "description": "Personal blog of Hendra 'hare' Sadewa",
+  "version": "0.0.1",
+  "author": "Hendra Sadewa <hendrasadewa30@gmail.com>",
   "dependencies": {
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/hare451g/hare451g.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/hare451g/hare451g.github.io/issues"
   }
 }
