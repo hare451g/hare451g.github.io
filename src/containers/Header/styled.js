@@ -5,6 +5,29 @@ const HeaderTitle = styled.h1`
   font-style: normal;
   font-weight: bold;
   line-height: 1.875rem;
+  color: #3d3d3d;
+
+  animation: none;
+
+  :hover {
+    animation: changecolor 1s infinite;
+    text-decoration: none;
+  }
+
+  @keyframes changecolor {
+    0% {
+      color: #851de0;
+    }
+    25% {
+      color: #aa26da;
+    }
+    75% {
+      color: #c355f5;
+    }
+    100% {
+      color: #851de0;
+    }
+  }
 `;
 
 const HeaderSubtitle = styled.div`

@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/hare451g.github.io',
   siteMetadata: {
     title: `hareblog`,
     description: `Personal blog of Hendra Sadewa`,
@@ -31,6 +32,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
