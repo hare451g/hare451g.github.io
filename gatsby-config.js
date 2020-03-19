@@ -3,6 +3,7 @@ module.exports = {
     title: `hareblog`,
     description: `Personal blog of Hendra Sadewa`,
     author: `Hendra 'hare' Sadewa`,
+    authorShortIntro: 'FOSS and JavaScript Enthusiast, addicted to ThinkPads',
     twitter: `@sadevva_`,
     instagram: `@sadevva_`,
     linkedIn: `https://www.linkedin.com/in/hendra-sadewa/`,
@@ -32,4 +33,4 @@ module.exports = {
       },
     },
   ],
-}
+};

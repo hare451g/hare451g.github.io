@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import { Helmet } from 'react-helmet';
 
 import Header from '../../containers/Header';
+import IdentityCard from '../../containers/IdentityCard';
 
 const GlobalStyle = createGlobalStyle`  
   body {
@@ -29,6 +30,7 @@ function AppLayout({ children }) {
       </Helmet>
       <GlobalStyle />
       <Header />
+      <IdentityCard />
       <main>{children}</main>
     </>
   );
