@@ -1,10 +1,9 @@
 ---
-title: color-profecto
+title: It’s hard to learn something new if you’re not willing to change.
 date: 19-03-2020
 description: Lorem markdownum nec ratione erat.
+heroImage: https://source.unsplash.com/random
 ---
-
-# Color profecto
 
 ## Una non locus aevi
 
@@ -51,6 +50,16 @@ Qua _annosque dis proles_ iacentem harena tu reparet ultor petit zonarumque
 inmurmurat anus; quid data nepoti. Notas artus cum rumor venabula reserato
 pedibus delere, quam, lunae me nomina tendens [arent
 per](http://laboribusmesses.org/revellitnon.aspx)!
+
+```js
+import React from 'react';
+
+function HelloWorld() {
+  return <p> Hello </p>;
+}
+
+export default HelloWorld;
+```
 
 Et _latuit_, illa cetera! [Corpore ego](http://utomne.com/modohorrentia.aspx)
 subit Daedalion anguigenae multis uterum!

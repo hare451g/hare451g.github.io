@@ -1,12 +1,24 @@
 import React from 'react';
+import moment from 'moment';
 import { graphql } from 'gatsby';
 
-import AppLayout from '../layouts/AppLayout';
+import Header from '../containers/Header';
+import IdentityCard from '../containers/IdentityCard';
+import Footer from '../containers/Footer';
 import SEO from '../containers/SEO';
 
+import AppLayout from '../layouts/AppLayout';
+
+import formats from '../constants/formats';
+
+import { PostTimestamp, PostTitle, HeroImage, MainArticle } from './styled';
+
 export default ({ data, pageContext }) => {
-  const post = data.markdownRemark;
-  const { title, description, date } = post.frontmatter;
+  const {
+    html,
+    frontmatter: { title, description, date, heroImage },
+  } = data.markdownRemark;
+
   return (
     <AppLayout>
       <SEO
@@ -14,14 +26,22 @@ export default ({ data, pageContext }) => {
         description={description}
         pathname={pageContext.slug}
       />
-      <div>
-        <h1>{title}</h1>
-        <div>{description}</div>
-        <div>
-          <span>Published: {date}</span>
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      <header>
+        <Header />
+        <HeroImage src={heroImage} alt={title} />
+        <PostTimestamp>
+          {moment(date, formats.FRONT_MATTER_DATE).format(
+            formats.ARTICLE_TIMESTAMP
+          )}
+        </PostTimestamp>
+        <PostTitle>{title}</PostTitle>
+      </header>
+      <MainArticle dangerouslySetInnerHTML={{ __html: html }} />
+
+      <footer>
+        <IdentityCard />
+        <Footer />
+      </footer>
     </AppLayout>
   );
 };
@@ -34,6 +54,7 @@ export const query = graphql`
         title
         date
         description
+        heroImage
       }
     }
   }

@@ -1,12 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import Header from '../../containers/Header';
-import IdentityCard from '../../containers/IdentityCard';
-
 import GlobalStyles from './GlobalStyles';
 import { AppLayoutWrapper } from './styled';
-import Footer from '../../containers/Footer';
 
 function AppLayout({ children }) {
   return (
@@ -24,14 +20,7 @@ function AppLayout({ children }) {
         />
       </Helmet>
       <GlobalStyles />
-      <header>
-        <Header />
-        <IdentityCard />
-      </header>
-      <main>{children}</main>
-      <footer>
-        <Footer />
-      </footer>
+      {children}
     </AppLayoutWrapper>
   );
 }
