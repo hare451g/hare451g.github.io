@@ -8,12 +8,6 @@ const AppLayoutWrapper = styled.div`
   margin: auto;
   grid-template-rows: auto 1fr auto;
 
-  header,
-  main,
-  footer {
-    padding: inherit;
-  }
-
   header {
     grid-row-start: 1;
     grid-row-end: 2;

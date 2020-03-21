@@ -3,15 +3,19 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+function SEO({ description, lang, meta, title, image }) {
+  const { site, authorThumbnail } = useStaticQuery(
     graphql`
       query {
+        authorThumbnail: file(relativePath: { eq: "author-thumbnail.png" }) {
+          publicURL
+        }
         site {
           siteMetadata {
             title
             description
             author
+            siteURL
           }
         }
       }
@@ -37,16 +41,28 @@ function SEO({ description, lang, meta, title }) {
           content: title,
         },
         {
+          property: `og:image`,
+          content: image,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `blog`,
         },
         {
           name: `twitter:card`,
           content: `summary`,
+        },
+        {
+          name: `twitter:image`,
+          content: image || authorThumbnail.publicURL,
+        },
+        {
+          name: `twitter:url`,
+          content: site.siteMetadata.siteURL,
         },
         {
           name: `twitter:creator`,

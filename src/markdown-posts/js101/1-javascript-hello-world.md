@@ -1,12 +1,12 @@
 ---
 title: JS 101 | Hello World
 date: 19-03-2020
-description: Ritual wajib seorang programmer
+description: Semuanya diawali dengan menyapa dunia~
 heroImage: https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
 series: js101
 ---
 
-Hello, It's me . . .
+Hello World!
 
 Jika kalian sebelumnya sudah pernah membuat program, pastinya sudah tau kan ritual awal para programmer jika menemukan teknologi atau bahasa pemrograman baru? Kalau belum mari kita kenalan dengan Hello world.
 
@@ -84,13 +84,13 @@ console.log('Halo Halo Dunia');
 jika sudah kembali ke terminal, dan pastikan kalian berada dalam satu direktori dengan file hello-world.js, lalu jalankan perintah
 
 ```bash
-  node hello-world.js
+node hello-world.js
 ```
 
 nanti akan tampil dilayar terminal kalian teks seperti ini:
 
 ```bash
-  Halo Halo Dunia
+Halo Halo Dunia
 ```
 
 Nah, sekarang kita sudah selesai membuat program sederhana dan juga kita sudah berusaha memahami apa yang terjadi dalam program sederhana yang telah kita buat, jika masih ada hal yang membuat bingung, jangan ragu - ragu untuk bertanya atau membuat issue di github di [link Ini issue ini](https://github.com/hare451g/hare451g.github.io/issues).
@@ -98,7 +98,3 @@ Nah, sekarang kita sudah selesai membuat program sederhana dan juga kita sudah b
 Semoga artikel ini dapat bermanfaat dan sampai jumpa di artikel berikutnya.
 
 Cheers.
-
----
-
-_Artikel ini bersifat Open Source, yang artinya kalian dapat edit / publish ulang sesuka hati kalian. Jika ada kesalahan atau hal yang membuat kalilan bingung, silahkan post issue ke [link Ini issue ini](https://github.com/hare451g/hare451g.github.io/issues)._

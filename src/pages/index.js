@@ -8,7 +8,6 @@ function IndexPage() {
   return (
     <HomeLayout>
       <SEO title={'Home'} />
-      <h3>Threads</h3>
       <ArticleList />
     </HomeLayout>
   );

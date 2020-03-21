@@ -15,6 +15,7 @@ function HomeLayout({ children }) {
       </header>
       <main>{children}</main>
       <footer>
+        <hr />
         <Footer />
       </footer>
     </AppLayout>

@@ -16,16 +16,13 @@ const HeaderTitle = styled.h1`
 
   @keyframes changecolor {
     0% {
-      color: #851de0;
+      color: #d86898;
     }
-    25% {
-      color: #aa26da;
-    }
-    75% {
-      color: #c355f5;
+    50% {
+      color: #7668d8;
     }
     100% {
-      color: #851de0;
+      color: #68c1d8;
     }
   }
 `;

@@ -4,7 +4,6 @@ const IdentityCardWrapper = styled.div`
   display: flex;
   flex-direction: row;
   padding: 1rem 0rem;
-  max-width: 420px;
 `;
 
 const AuthorThumbnailWrapper = styled.div`
@@ -12,6 +11,13 @@ const AuthorThumbnailWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  :hover {
+    cursor: pointer;
+    :after {
+      content: "Please don't touch my face";
+    }
+  }
 `;
 
 const AuthorDescriptionWrapper = styled.div`

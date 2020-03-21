@@ -6,10 +6,15 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import formats from '../../constants/formats';
 
 import {
+  SerieWrapper,
+  PostsWrapper,
   PostWrapper,
   PostTimestamp,
   PostTitle,
   PostDescription,
+  PostContainer,
+  PostHeroImage,
+  PostHeroImageContainer,
 } from './styled';
 
 function ArticleList() {
@@ -17,6 +22,7 @@ function ArticleList() {
     graphql`
       query {
         allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+          distinct(field: frontmatter___series)
           edges {
             node {
               id
@@ -25,6 +31,8 @@ function ArticleList() {
                 date
                 description
                 title
+                series
+                heroImage
               }
               fields {
                 slug
@@ -36,29 +44,49 @@ function ArticleList() {
     `
   );
 
-  const posts = data.allMarkdownRemark.edges;
+  const { edges: posts, distinct: availableSeries } = data.allMarkdownRemark;
 
-  return posts.map(({ node }) => {
-    const {
-      id,
-      frontmatter: { date, title, description },
-      fields: { slug },
-    } = node;
+  // group by available series
+  const results = availableSeries.map(serie => ({
+    serie,
+    entries: posts.filter(
+      ({ node: { frontmatter } }) => frontmatter.series === serie
+    ),
+  }));
 
-    return (
-      <Link key={id} to={slug} style={{ textDecoration: 'none' }}>
-        <PostWrapper>
-          <PostTimestamp>
-            {moment(date, formats.FRONT_MATTER_DATE).format(
-              formats.ARTICLE_TIMESTAMP
-            )}
-          </PostTimestamp>
-          <PostTitle>{title}</PostTitle>
-          <PostDescription>{description}</PostDescription>
-        </PostWrapper>
-      </Link>
-    );
-  });
+  return results.map(({ serie, entries }) => (
+    <SerieWrapper key={serie}>
+      <h2>#{serie}</h2>
+      <PostsWrapper>
+        {entries.map(({ node }) => {
+          const {
+            id,
+            frontmatter: { date, title, description, heroImage },
+            fields: { slug },
+          } = node;
+
+          return (
+            <Link to={slug} style={{ textDecoration: 'none' }} key={id}>
+              <PostContainer>
+                <PostHeroImageContainer>
+                  <PostHeroImage src={heroImage} alt={title} />
+                </PostHeroImageContainer>
+                <PostWrapper>
+                  <PostTimestamp>
+                    {moment(date, formats.FRONT_MATTER_DATE).format(
+                      formats.ARTICLE_TIMESTAMP
+                    )}
+                  </PostTimestamp>
+                  <PostTitle>{title}</PostTitle>
+                  <PostDescription>{description}</PostDescription>
+                </PostWrapper>
+              </PostContainer>
+            </Link>
+          );
+        })}
+      </PostsWrapper>
+    </SerieWrapper>
+  ));
 }
 
 export default ArticleList;

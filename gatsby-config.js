@@ -1,10 +1,11 @@
 module.exports = {
   pathPrefix: '/hare451g.github.io',
   siteMetadata: {
-    title: `hareblog`,
+    title: `hare451g.github.io`,
     description: `Personal blog of Hendra Sadewa`,
     author: `Hendra 'hare' Sadewa`,
-    authorShortIntro: 'FOSS and JavaScript Enthusiast, addicted to ThinkPads',
+    authorShortIntro:
+      'FOSS and JavaScript Enthusiast, addicted to ThinkPads and weird music',
     twitter: `@sadevva_`,
     instagram: `sadevva_`,
     linkedIn: `hendra-sadewa`,
@@ -12,6 +13,7 @@ module.exports = {
     twitterURL: `https://twitter.com/sadevva_`,
     instagramURL: `https://www.instagram.com/sadevva_/`,
     email: `hendrasadewa30@gmail.com`,
+    siteURL: `hare451g.github.io`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -36,13 +38,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `hare451g.github.io`,
+        short_name: `hareblog`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#d86898`,
+        theme_color: `#68c1d8`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/hareblog-icon.svg`,
       },
     },
   ],
