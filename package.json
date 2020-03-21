@@ -2,7 +2,7 @@
   "name": "hare451g.github.io",
   "private": false,
   "description": "Personal blog of Hendra 'hare' Sadewa",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Hendra Sadewa <hendrasadewa30@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
