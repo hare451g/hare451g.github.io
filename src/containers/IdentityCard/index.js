@@ -30,9 +30,11 @@ function IdentityCard() {
   );
   return (
     <IdentityCardWrapper>
-      <AuthorThumbnailWrapper>
-        <img src={authorThumbnail.publicURL} alt={siteMetadata.author} />
-      </AuthorThumbnailWrapper>
+      <Link to="/about">
+        <AuthorThumbnailWrapper>
+          <img src={authorThumbnail.publicURL} alt={siteMetadata.author} />
+        </AuthorThumbnailWrapper>
+      </Link>
       <AuthorDescriptionWrapper>
         <Link to="/about">
           <AuthorName>{siteMetadata.author}</AuthorName>

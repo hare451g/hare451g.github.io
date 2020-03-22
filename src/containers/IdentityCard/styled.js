@@ -11,13 +11,6 @@ const AuthorThumbnailWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  :hover {
-    cursor: pointer;
-    :after {
-      content: "Please don't touch my face";
-    }
-  }
 `;
 
 const AuthorDescriptionWrapper = styled.div`
