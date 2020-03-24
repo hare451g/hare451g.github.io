@@ -12,7 +12,6 @@ const PostContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin: 24px 0px;
-  border: 2px solid #3d3d3d;
 
   @media (max-width: 720px) {
     display: flex;
@@ -57,10 +56,12 @@ const PostHeroImage = styled.img`
   height: 160px;
   width: 100%;
   margin-right: 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 
   @media (min-width: 720px) {
     width: 160px;
     margin-right: 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
   }
 `;
 
@@ -73,21 +74,20 @@ const PostHeroImageContainer = styled.div`
 
 const PostTimestamp = styled.div`
   padding-top: 1rem;
-  font-family: Quicksand;
-  font-style: normal;
-  font-weight: 300;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 0.85rem;
   text-decoration: none;
-  color: #3d3d3d;
+  color: #424242;
 `;
 
 const PostTitle = styled.div`
   padding: 0.2rem 0;
-  font-family: Quicksand;
+  padding-right: 1rem;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 800;
   font-size: 1rem;
-  color: #3d3d3d;
+  color: #424242;
 
   :hover {
     color: #2196f3;
@@ -96,11 +96,12 @@ const PostTitle = styled.div`
 
 const PostDescription = styled.div`
   padding: 0.5rem 0;
+  padding-right: 0.75rem;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  color: #3d3d3d;
+  color: #424242;
 `;
 export {
   SerieWrapper,

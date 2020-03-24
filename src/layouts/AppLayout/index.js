@@ -18,6 +18,11 @@ function AppLayout({ children }) {
           rel="stylesheet"
           lazyLoad
         />
+        <link
+          href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300&display=swap"
+          rel="stylesheet"
+          lazyLoad
+        ></link>
       </Helmet>
       <GlobalStyles />
       {children}

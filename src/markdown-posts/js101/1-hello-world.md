@@ -1,9 +1,10 @@
 ---
-title: JS 101 | Hello World
+title: Hello World
 date: 19-03-2020
 description: Semuanya diawali dengan menyapa dunia~
 heroImage: https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
 series: js101
+isPublished: true
 ---
 
 Hello World!

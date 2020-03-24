@@ -1,9 +1,10 @@
 ---
-title: JS 101 | Intro
+title: JavaScript 101
 date: 19-03-2020
 description: Belajar dasar pemrograman javascript dengan pembawaan yang singkat dan santai.
 heroImage: https://images.unsplash.com/photo-1552308995-2baac1ad5490?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 series: js101
+isPublished: true
 ---
 
 Selamat datang di serial [#JS101](/js101), dalam serial artikel ini gue akan bahas pemrograman javascript dasar. Serial [#JS101](/js101) ini terbagi menjadi beberapa artikel pendek, berisikan satu buah topik terkait dengan pemrograman dengan menggunakan JavaScript.
@@ -17,13 +18,10 @@ Oke tanpa basa basi lagi berikut edisi yang tersedia dan yang akan tersedia:
 
 ### Basic
 
-- [Hello World](/js101/1-javascript-hello-world/)
-- Data types ( numbers ) [*belum tersedia*]
-- Data types ( String ) [*belum tersedia*]
-- Data types ( Booleans ) [*belum tersedia*]
-- Data types ( Array ) [*belum tersedia*]
-- Data types ( Objects ) [*belum tersedia*]
-- Operators [*belum tersedia*]
+- [Hello World](/js101/1-hello-world/)
+- [Variables and Constants](/js101/2-variables-constants/)
+- [Data Types (Primitives)](/js101/3-data-types/)
+- Operators & Basic Operations [*belum tersedia*]
 - Variable & Constants [*belum tersedia*]
 
 ### Basic Functions

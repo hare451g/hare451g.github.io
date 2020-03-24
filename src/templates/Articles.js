@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 import Header from '../containers/Header';
 import IdentityCard from '../containers/IdentityCard';
@@ -11,7 +11,13 @@ import AppLayout from '../layouts/AppLayout';
 
 import formats from '../constants/formats';
 
-import { PostTimestamp, PostTitle, HeroImage, MainArticle } from './styled';
+import {
+  PostTimestamp,
+  PostTitle,
+  Description,
+  HeroImage,
+  MainArticle,
+} from './styled';
 
 export default ({ data, pageContext }) => {
   const {
@@ -33,24 +39,21 @@ export default ({ data, pageContext }) => {
       />
       <header>
         <Header />
-        <HeroImage src={heroImage} alt={title} />
         <PostTitle>{title}</PostTitle>
         <PostTimestamp>{timeStamp}</PostTimestamp>
+        <Description>{description}</Description>
+        <div>
+          Author:
+          <IdentityCard />
+        </div>
+        <HeroImage src={heroImage} alt={title} />
       </header>
-      <MainArticle dangerouslySetInnerHTML={{ __html: html }} />
+      <MainArticle>
+        <article dangerouslySetInnerHTML={{ __html: html }}></article>
+      </MainArticle>
+
       <footer>
         <hr />
-        <p>
-          Artikel ini bersifat <strong>'FREE'</strong>, yang artinya kalian
-          dapat edit / publish ulang sesuka hati kalian. Jika ada kesalahan atau
-          hal yang membuat kalilan bingung, silahkan post issue ke{' '}
-          <a href="https://github.com/hare451g/hare451g.github.io/issues">
-            link issue ini
-          </a>
-          .
-        </p>
-
-        <IdentityCard />
         <Footer />
       </footer>
     </AppLayout>

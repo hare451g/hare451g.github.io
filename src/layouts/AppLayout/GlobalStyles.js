@@ -9,20 +9,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
+    background: rgb(255, 255, 250);
     height: 100vh;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
   a {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #3d3d3d;
+    color: #424242;
 
     :hover {
       color: #2196f3;

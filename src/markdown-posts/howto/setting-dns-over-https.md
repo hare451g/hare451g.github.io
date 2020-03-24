@@ -4,6 +4,7 @@ date: 20-03-2020
 description: Setting DoH di firefox dengan menggunakan DNS Cloudflare 1.1.1.1, EZ~
 heroImage: https://media.giphy.com/media/11S3e44upmuPTi/giphy.gif
 series: howto
+isPublished: true
 ---
 
 Pernahkah kalian sedang ada bug di production dan sedang research dan menemukan calon solusi dari permasalahan kalian namun solusi tersebut terletak di reddit, dan pas kalian buka ternyata di block oleh ~~first-indi-net~~ provider internet kesayangan kalian.

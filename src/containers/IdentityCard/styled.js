@@ -21,7 +21,7 @@ const AuthorDescriptionWrapper = styled.div`
 `;
 
 const AuthorName = styled.div`
-  font-family: Quicksand;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;

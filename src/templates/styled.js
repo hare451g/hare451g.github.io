@@ -1,29 +1,30 @@
 import styled from 'styled-components';
 
 const PostTimestamp = styled.div`
-  padding-top: 1rem;
-  font-family: Quicksand;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
   font-style: normal;
   font-weight: 300;
   font-size: 0.85rem;
   line-height: 0.75rem;
   text-decoration: none;
-  color: #3d3d3d;
+  color: #424242;
 `;
 
 const PostTitle = styled.h1`
-  padding-top: 0;
-  margin-top: 0;
-  margin-bottom: 0.25rem;
-
-  font-family: Quicksand;
+  padding-bottom: 0.1rem;
+  margin-bottom: 0.1rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-weight: bold;
-  color: #3d3d3d;
+  font-weight: 800;
+  color: #424242;
 
   @media only screen and (max-device-width: 480px) {
     font-size: 1.5rem;
-    margin-bottom: 0.1rem;
+    padding-bottom: 0.1rem;
   }
 `;
 
@@ -33,42 +34,56 @@ const HeroImage = styled.img`
   height: auto;
   max-height: 192px;
 
+  padding: 2rem 0rem;
+  padding-top: 0;
   @media only screen and (min-device-width: 480px) {
     max-height: 420px;
     max-width: 720px;
   }
 `;
 
+const Description = styled.blockquote`
+  font-style: italic;
+  font-weight: 200;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+`;
+
 const MainArticle = styled.main`
-  margin-top: 1rem;
-  max-width: 720px;
+  min-width: 100%;
+  max-width: 100%;
   p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    line-height: 1.8rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.625rem;
+    letter-spacing: 0.1px;
   }
   a {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
     color: #34558b;
+    text-decoration: underline;
   }
 
   pre {
-    background-color: #3d3d3d;
+    background-color: #424242;
     border-radius: 0.85rem;
-    padding: 1rem 0.4rem;
+    padding: 1rem 1rem;
+    max-width: 100%;
     overflow-x: auto;
     cursor: text;
   }
 
   img {
-    max-width: 100%;
+    width: 100%;
+    margin: 0rem auto;
   }
 
   pre > code {
     color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
   }
 
   ol {
@@ -78,6 +93,19 @@ const MainArticle = styled.main`
   ol > li {
     margin-bottom: 1rem;
   }
+
+  /* phone only */
+  @media only screen and (max-device-width: 480px) {
+    p {
+      font-size: 0.85rem;
+    }
+  }
+
+  /* larger than phone */
+  @media only screen and (min-device-width: 480px) {
+    min-width: 480px;
+    max-width: 720px;
+  }
 `;
 
-export { PostTimestamp, PostTitle, HeroImage, MainArticle };
+export { PostTimestamp, Description, PostTitle, HeroImage, MainArticle };

@@ -1,11 +1,33 @@
 import styled from 'styled-components';
+const HeaderWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+`;
+
+const BrandImage = styled.img`
+  height: 64px;
+  width: 64px;
+
+  @media only screen and (max-device-width: 480px) {
+    height: 32px;
+    width: 32px;
+  }
+`;
 
 const HeaderTitle = styled.h1`
-  font-family: Quicksand, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
-  line-height: 1.875rem;
-  color: #3d3d3d;
+  margin: 0;
+  padding-bottom: 0.2rem;
+  padding-left: 1rem;
+
+  font-size: 1.5rem;
+  color: #424242;
 
   animation: none;
 
@@ -28,11 +50,14 @@ const HeaderTitle = styled.h1`
 `;
 
 const HeaderSubtitle = styled.div`
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'Open Sans' sans-serif;
+  font-weight: normal;
   font-size: 1rem;
-  line-height: 0.9375rem;
+  padding-left: 1rem;
+
+  @media only screen and (max-device-width: 480px) {
+    font-size: 0.7rem;
+  }
 `;
 
-export { HeaderTitle, HeaderSubtitle };
+export { HeaderWrapper, BrandImage, HeaderTitle, HeaderSubtitle };

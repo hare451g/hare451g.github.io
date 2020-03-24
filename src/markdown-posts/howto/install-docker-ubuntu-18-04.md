@@ -4,9 +4,10 @@ date: 21-03-2020
 description: Cara install Docker di ubuntu 18.04 dengan mudah melalui beberapa perintah sederhana.
 heroImage: https://media.giphy.com/media/jYjA6fHBfAZvq/giphy.gif
 series: howto
+isPublished: true
 ---
 
-Bagi pengguna web developer serta pengguna OS berbasis Linux seperti Ubuntu seperti gue ini, sering kali mendapatkan tugas untuk 'deploy' website ke beberapa remote VM (Virtual Machine) atau VPS. Namun beberapa kali gue mendapatkan kesulitan untuk menyamakan config di VPS/VM dengan laptop yang digunakan untuk develop website.
+Bagi web developer serta pengguna OS berbasis Linux seperti Ubuntu seperti gue ini, sering kali mendapatkan tugas untuk 'deploy' website ke beberapa remote VM (Virtual Machine) atau VPS. Namun beberapa kali gue mendapatkan kesulitan untuk menyamakan config di VPS/VM dengan laptop yang digunakan untuk develop website.
 
 Misal, jika ada project untuk membuat Website dengan spesifikasi server tujuan menggunakan CentOS, RDBMS Postgres, dan php7, sementara laptop yang digunakan untuk develop website adalah Ubuntu 18.04 tanpa terinstall Postgres dan php7 akan sangat ~~malas~~ makan waktu untuk melakukan konfigurasi environment development dengan environment server tujuan. Mau tidak mau di local harus install php7 dan posgres, belum lagi cara installasi kedua apps berbeda yang local pakai apt dan server pakai dnf, repot sekali.
 

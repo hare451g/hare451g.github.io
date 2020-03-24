@@ -4,6 +4,7 @@ date: 18-03-2020
 description: I re-build this site, again. . .
 heroImage: https://media.giphy.com/media/QBGYWFjnggIZ8fMjdt/giphy.gif
 series: journal
+isPublished: true
 ---
 
 Hello again(?).

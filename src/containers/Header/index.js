@@ -1,12 +1,20 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
-import { HeaderTitle, HeaderSubtitle } from './styled';
+import {
+  HeaderWrapper,
+  BrandImage,
+  HeaderTitle,
+  HeaderSubtitle,
+} from './styled';
 
 function Header() {
-  const { site } = useStaticQuery(
+  const { site, websiteLogo } = useStaticQuery(
     graphql`
       query {
+        websiteLogo: file(relativePath: { eq: "hareblog-icon.svg" }) {
+          publicURL
+        }
         site {
           siteMetadata {
             title
@@ -17,12 +25,19 @@ function Header() {
     `
   );
   return (
-    <div style={{ marginBottom: '1.5rem' }}>
+    <HeaderWrapper>
+      <Link to="/">
+        <BrandImage
+          src={websiteLogo.publicURL}
+          alt="hare451g brand"
+          height={72}
+        />
+      </Link>
       <Link to="/">
         <HeaderTitle>{site.siteMetadata.title}</HeaderTitle>
+        <HeaderSubtitle>{site.siteMetadata.description}</HeaderSubtitle>
       </Link>
-      <HeaderSubtitle>{site.siteMetadata.description}</HeaderSubtitle>
-    </div>
+    </HeaderWrapper>
   );
 }
 

@@ -21,7 +21,10 @@ function ArticleList() {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+        allMarkdownRemark(
+          sort: { order: DESC, fields: frontmatter___date }
+          filter: { frontmatter: { isPublished: { eq: true } } }
+        ) {
           distinct(field: frontmatter___series)
           edges {
             node {
@@ -56,7 +59,14 @@ function ArticleList() {
 
   return results.map(({ serie, entries }) => (
     <SerieWrapper key={serie}>
-      <h2>#{serie}</h2>
+      <h2
+        id={serie}
+        style={{
+          fontFamily: `'IBM Plex Mono', monospace`,
+        }}
+      >
+        #{serie}
+      </h2>
       <PostsWrapper>
         {entries.map(({ node }) => {
           const {

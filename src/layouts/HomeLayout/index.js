@@ -11,10 +11,10 @@ function HomeLayout({ children }) {
     <AppLayout>
       <header>
         <Header />
-        <IdentityCard />
       </header>
       <main>{children}</main>
       <footer>
+        <IdentityCard />
         <hr />
         <Footer />
       </footer>
