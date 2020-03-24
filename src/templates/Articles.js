@@ -39,6 +39,7 @@ export default ({ data, pageContext }) => {
       />
       <header>
         <Header />
+        <Link to="/">&lt;- Back to Home</Link>
         <PostTitle>{title}</PostTitle>
         <PostTimestamp>{timeStamp}</PostTimestamp>
         <Description>{description}</Description>
