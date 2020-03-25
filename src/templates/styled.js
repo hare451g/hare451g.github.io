@@ -28,6 +28,10 @@ const PostTitle = styled.h1`
   }
 `;
 
+const AuthorWrapper = styled.div`
+  padding: 1.5rem 0;
+`;
+
 const HeroImage = styled.img`
   object-fit: cover;
   width: 100%;
@@ -68,7 +72,6 @@ const MainArticle = styled.main`
   }
 
   pre {
-    background-color: #424242;
     border-radius: 0.85rem;
     padding: 1rem 1rem;
     max-width: 100%;
@@ -82,7 +85,6 @@ const MainArticle = styled.main`
   }
 
   pre > code {
-    color: #fff;
     font-family: 'IBM Plex Mono', monospace;
   }
 
@@ -108,4 +110,11 @@ const MainArticle = styled.main`
   }
 `;
 
-export { PostTimestamp, Description, PostTitle, HeroImage, MainArticle };
+export {
+  PostTimestamp,
+  Description,
+  AuthorWrapper,
+  PostTitle,
+  HeroImage,
+  MainArticle,
+};

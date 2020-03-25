@@ -32,6 +32,11 @@ function SeriesList() {
           </Link>
         </SerieWrapper>
       ))}
+      <SerieWrapper>
+        <Link to={'/covid-19'} style={{ textDecoration: 'none' }}>
+          COVID-19
+        </Link>
+      </SerieWrapper>
     </SeriesWrapper>
   );
 }

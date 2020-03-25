@@ -17,6 +17,7 @@ import {
   Description,
   HeroImage,
   MainArticle,
+  AuthorWrapper,
 } from './styled';
 
 export default ({ data, pageContext }) => {
@@ -39,14 +40,22 @@ export default ({ data, pageContext }) => {
       />
       <header>
         <Header />
-        <Link to="/">&lt;- Back to Home</Link>
+        <Link to="/">
+          <span role="img" alt="home">
+            ⬅️
+          </span>{' '}
+          Back to Home
+        </Link>
         <PostTitle>{title}</PostTitle>
         <PostTimestamp>{timeStamp}</PostTimestamp>
         <Description>{description}</Description>
-        <div>
+        <AuthorWrapper>
+          <span role="img" alt="author">
+            ✍️
+          </span>{' '}
           Author:
           <IdentityCard />
-        </div>
+        </AuthorWrapper>
         <HeroImage src={heroImage} alt={title} />
       </header>
       <MainArticle>

@@ -7,7 +7,7 @@ series: js101
 isPublished: true
 ---
 
-Javascript bersifat _Dynamic Type_ yang artinya tipe data yang di assign kedalam suatu variabel dapat berubah, beda dengan java atau c yang besifat _Static Type_ yang tipeda datanya tak bisa dirubah dan harus menentukan tipe data ketika kita (HAH~?! Kita?) mendeklarasikan suatu variabel. Terkadang hal ini akan membingungkan bagi orang yang awal nya sudah pernah belajar bahasa Java / C / Pascal.
+Javascript bersifat _Dynamic Type_ yang artinya tipe data yang di assign kedalam suatu variabel dapat berubah, beda dengan java atau c yang besifat _Static Type_ yang tipe datanya tak bisa dirubah dan harus menentukan tipe data ketika kita (HAH~?! Kita?) mendeklarasikan suatu variabel. Terkadang hal ini akan membingungkan bagi orang yang awal nya sudah pernah belajar bahasa Java / C / Pascal.
 
 _Jika kalian nyaman dengan static typing, javascript juga memiliki subset bahasa yang bersifat static typing, yaitu [TypeScript](https://www.typescriptlang.org/)._
 
