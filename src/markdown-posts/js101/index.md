@@ -11,18 +11,18 @@ Selamat datang di serial [#JS101](/js101), dalam serial artikel ini gue akan bah
 
 Untuk mengikuti serial ini, diharapkan kalian sudah install:
 
+- basic programming
 - Node js versi terkini atau LTS [download di nodejs.org ](https://nodejs.org/en/)
 - Code Editor ([Visual Studio Code](https://code.visualstudio.com/) / Sublime / Atom / Nodepad ++ / vim)
 
 Oke tanpa basa basi lagi berikut edisi yang tersedia dan yang akan tersedia:
 
-### Basic
+### Introduction
 
-- [Hello World](/js101/1-hello-world/)
-- [Variables and Constants](/js101/2-variables-constants/)
-- [Data Types (Primitives)](/js101/3-data-types/)
-- Operators & Basic Operations [*belum tersedia*]
-- Variable & Constants [*belum tersedia*]
+- [Hello World](/js101/introduction/)
+- [Variables and Constants](/js101/introduction/1-variables-constants/)
+- [Data Types (Primitives)](/js101/introduction/2-data-types/)
+- [Operators & Basic Operations](/js101/operators/)
 
 ### Basic Functions
 

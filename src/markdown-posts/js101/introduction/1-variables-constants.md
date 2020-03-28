@@ -7,7 +7,7 @@ series: js101
 isPublished: true
 ---
 
-Dalam pemrograman, sering kali program harus dapat menyimpan nilai sementara, baik niali dari suatu operasi, ataupun nilai konstan yang akan digunakan kembali. Nilai sementara yang disimpan dapat diberi nama untuk mewakili nilainya, tujuannya adalah agar dapat mudah memanggil kembali nilai yang telah disimpan, Nilai sementara yang diberi nama dapat disebut juga dengan `Variabel`.
+Dalam pemrograman, sering kali program harus dapat menyimpan nilai sementara, baik nilai dari suatu operasi, ataupun nilai konstan yang akan digunakan kembali. Nilai sementara yang disimpan dapat diberi nama untuk mewakili nilainya, tujuannya adalah agar dapat mudah memanggil kembali nilai yang telah disimpan, Nilai sementara yang diberi nama dapat disebut juga dengan `Variabel`.
 
 ## Variabel
 

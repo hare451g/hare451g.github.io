@@ -6,9 +6,7 @@ import Header from '../containers/Header';
 import IdentityCard from '../containers/IdentityCard';
 import Footer from '../containers/Footer';
 import SEO from '../containers/SEO';
-
 import AppLayout from '../layouts/AppLayout';
-
 import formats from '../constants/formats';
 
 import {

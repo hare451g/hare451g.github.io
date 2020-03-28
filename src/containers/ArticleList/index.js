@@ -79,7 +79,7 @@ function ArticleList() {
             <Link to={slug} style={{ textDecoration: 'none' }} key={id}>
               <PostContainer>
                 <PostHeroImageContainer>
-                  <PostHeroImage src={heroImage} alt={title} />
+                  <PostHeroImage src={heroImage} alt={title} async="on" />
                 </PostHeroImageContainer>
                 <PostWrapper>
                   <PostTimestamp>

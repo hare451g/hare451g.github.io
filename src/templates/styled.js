@@ -57,9 +57,10 @@ const Description = styled.blockquote`
 const MainArticle = styled.main`
   min-width: 100%;
   max-width: 100%;
+
   p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
     font-style: normal;
     line-height: 1.625rem;
@@ -86,6 +87,7 @@ const MainArticle = styled.main`
 
   pre > code {
     font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
   }
 
   ol {
@@ -99,7 +101,7 @@ const MainArticle = styled.main`
   /* phone only */
   @media only screen and (max-device-width: 480px) {
     p {
-      font-size: 0.85rem;
+      font-size: 1rem;
     }
   }
 
