@@ -1,4 +1,4 @@
 export default {
-  FRONT_MATTER_DATE: 'DD-MM-YYYY',
+  FRONT_MATTER_DATE: 'YYYY-MM-DD',
   ARTICLE_TIMESTAMP: 'dddd, DD/MM/YYYY',
 };

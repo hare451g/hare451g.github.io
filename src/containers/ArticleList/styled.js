@@ -13,6 +13,8 @@ const PostContainer = styled.div`
   flex-direction: row;
   margin: 24px 0px;
 
+  border: solid 1px #c1c1c1;
+
   @media (max-width: 720px) {
     display: flex;
     flex-direction: column;
@@ -23,6 +25,7 @@ const PostContainer = styled.div`
 
   :hover {
     animation: elevate 1.5s forwards;
+    background-color: #ffffff;
   }
 
   @keyframes elevate {

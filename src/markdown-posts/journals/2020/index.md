@@ -1,9 +1,12 @@
 ---
 title: Hello World
-date: 18-03-2020
+date: 2020-03-18
 description: I re-build this site, again. . .
 heroImage: https://media.giphy.com/media/QBGYWFjnggIZ8fMjdt/giphy.gif
 series: journal
+seasonTitle: Year - 2020
+season: 2020
+episode: 1
 isPublished: true
 ---
 

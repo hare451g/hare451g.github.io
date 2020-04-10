@@ -1,9 +1,12 @@
 ---
 title: Cara Setting DNS Over HTTPS (DoH) di HP Android 10
-date: 21-03-2020
+date: 2020-03-21
 description: Setting DoH di handphone Android 10 (WiFi only) dengan menggunakan DNS Cloudflare 1.1.1.1
 heroImage: https://media.giphy.com/media/8Bkr9UJQTuqEnzkOae/giphy.gif
 series: howto
+seasonTitle: internet
+season: 1
+episode: 2
 isPublished: true
 ---
 

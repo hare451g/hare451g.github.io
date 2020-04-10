@@ -60,10 +60,10 @@ const MainArticle = styled.main`
 
   p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 400;
     font-style: normal;
-    line-height: 1.625rem;
+    line-height: 1.75rem;
     letter-spacing: 0.1px;
   }
   a {

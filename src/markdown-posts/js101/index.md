@@ -1,6 +1,6 @@
 ---
 title: JavaScript 101
-date: 19-03-2020
+date: 2020-03-19
 description: Belajar dasar pemrograman javascript dengan pembawaan yang singkat dan santai.
 heroImage: https://images.unsplash.com/photo-1552308995-2baac1ad5490?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 series: js101

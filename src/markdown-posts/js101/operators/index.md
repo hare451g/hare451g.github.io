@@ -1,9 +1,12 @@
 ---
 title: Operator and Expression
-date: 23-03-2020
-description: Kumpulan tutorial tentang operator untuk mengolah data di javascript.
+date: 2020-03-23
+description: Kumpulan artikel tentang operator untuk mengolah data di javascript.
 heroImage: https://images.unsplash.com/photo-1573487128671-84e3cea4f78b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=631&q=80
 series: js101
+seasonTitle: operators
+season: 2
+episode: 0
 isPublished: true
 ---
 
@@ -13,7 +16,7 @@ Operator digunakan untuk melakukan proses pengolahan data seperti operasi artima
 
 1. [Assignment Operators](/js101/operators/1-assignment-operators/)
 2. [Arithmetic Operators](/js101/operators/2-arithmetic-operators/)
-3. Comparison Operators [Belum Tersedia]
+3. [Comparison Operators](/js101/operators/3-comparison-operators/)
 4. Logical Operators [Belum Tersedia]
 5. String Operators [Belum Tersedia]
 6. Ternary Operators [Belum Tersedia]

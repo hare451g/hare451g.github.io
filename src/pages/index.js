@@ -1,12 +1,12 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 import SEO from '../containers/SEO';
 import ArticleList from '../containers/ArticleList';
 import HomeLayout from '../layouts/HomeLayout';
 import SeriesList from '../containers/SeriesList';
 
-function IndexPage() {
+function IndexPage(props) {
   const {
     site: { siteMetadata },
     siteLogo,
@@ -29,7 +29,6 @@ function IndexPage() {
   return (
     <HomeLayout>
       <SEO title={title} description={description} image={siteLogo.publicURL} />
-      <SeriesList />
       <ArticleList />
     </HomeLayout>
   );

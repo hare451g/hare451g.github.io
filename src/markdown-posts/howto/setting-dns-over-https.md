@@ -1,9 +1,12 @@
 ---
 title: Cara Setting DNS Over HTTPS (DoH) Firefox
-date: 20-03-2020
+date: 2020-03-20
 description: Setting DoH di firefox dengan menggunakan DNS Cloudflare 1.1.1.1, EZ~
 heroImage: https://media.giphy.com/media/11S3e44upmuPTi/giphy.gif
 series: howto
+seasonTitle: internet
+season: 1
+episode: 1
 isPublished: true
 ---
 

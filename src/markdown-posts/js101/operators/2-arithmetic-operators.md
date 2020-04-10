@@ -1,9 +1,12 @@
 ---
 title: Operator and Expression | Arithmetic
-date: 26-03-2020
+date: 2020-03-26
 description: Tutorial menggunakan operator aritmatika dalam javascript untuk mengolah data numeric.
 heroImage: https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 series: js101
+seasonTitle: operators
+season: 1
+episode: 2
 isPublished: true
 ---
 
@@ -60,7 +63,7 @@ Jika dirunning dengan perintah `node arit.js`, maka akan menghasilkan output:
 4 % 2 = 0
 ```
 
-oke, normal ya, sesuai dengan ekspektasi, sekarang kita coba dua operator terakhir, yaitu increment `++` dan decrement `--`. Coba replace isi dari file `arit.js` dengan code dibawah ini:
+oke, normal ya, sesuai dengan ekspektasi, sekarang kita coba dua operator terakhir, yaitu increment `++` dan decrement `--`. Coba replace isi dari file `Operatorsarit.js` dengan code dibawah ini:
 
 ```js
 let hasil = 0;
