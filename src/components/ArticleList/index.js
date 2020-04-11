@@ -1,21 +1,13 @@
 import React from 'react';
 import moment from 'moment';
 
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 import formats from '../../constants/formats';
+import ArticleCard from '../ArticleCard';
 
-import {
-  SerieWrapper,
-  PostsWrapper,
-  PostWrapper,
-  PostTimestamp,
-  PostTitle,
-  PostDescription,
-  PostContainer,
-  PostHeroImage,
-  PostHeroImageContainer,
-} from './styled';
+import { SerieWrapper, PostsWrapper } from './styled';
+import { mapSeriesBySeason, sortByLatest } from './helpers';
 
 function ArticleList() {
   const data = useStaticQuery(
@@ -52,7 +44,9 @@ function ArticleList() {
     `
   );
 
-  const { edges: posts, distinct: availableSeries } = data.allMarkdownRemark;
+  const {
+    allMarkdownRemark: { edges: posts, distinct: availableSeries },
+  } = data;
 
   // group by available series
   const results = availableSeries.map(serie => ({
@@ -63,46 +57,7 @@ function ArticleList() {
   }));
 
   // group series by available seasons
-  const seriesBySeasons = results
-    .map(series => {
-      const filteredSeasons = [
-        ...new Set(
-          series.entries
-            .filter(({ node }) => node.frontmatter.season !== null)
-            .map(({ node }) => node.frontmatter.seasonTitle)
-        ),
-      ];
-
-      // group by season
-      const seasons = filteredSeasons.map(season => ({
-        title: season,
-        entries: series.entries
-          .filter(
-            ({ node }) =>
-              node.frontmatter.seasonTitle !== null &&
-              node.frontmatter.seasonTitle === season
-          )
-          .map(({ node }) => ({ ...node })),
-      }));
-
-      return {
-        serie: series.serie,
-        seasons,
-        latest:
-          series.entries.length > 0
-            ? series.entries[0].node.frontmatter.date
-            : null,
-      };
-    })
-    .sort((current, next) => {
-      if (moment(current.latest).isAfter(next.latest)) {
-        return -1;
-      }
-      if (moment(current.latest).isBefore(next.latest)) {
-        return 1;
-      }
-      return 0;
-    });
+  const seriesBySeasons = results.map(mapSeriesBySeason).sort(sortByLatest);
 
   return seriesBySeasons.map(({ serie, seasons }) => (
     <SerieWrapper key={serie}>
@@ -125,22 +80,16 @@ function ArticleList() {
                 frontmatter: { date, title, description, heroImage },
                 fields: { slug },
               }) => (
-                <Link to={slug} style={{ textDecoration: 'none' }} key={id}>
-                  <PostContainer>
-                    <PostHeroImageContainer>
-                      <PostHeroImage src={heroImage} alt={title} async="on" />
-                    </PostHeroImageContainer>
-                    <PostWrapper>
-                      <PostTimestamp>
-                        {moment(date, formats.FRONT_MATTER_DATE).format(
-                          formats.ARTICLE_TIMESTAMP
-                        )}
-                      </PostTimestamp>
-                      <PostTitle>{title}</PostTitle>
-                      <PostDescription>{description}</PostDescription>
-                    </PostWrapper>
-                  </PostContainer>
-                </Link>
+                <ArticleCard
+                  id={id}
+                  slug={slug}
+                  heroImage={heroImage}
+                  title={title}
+                  date={moment(date, formats.FRONT_MATTER_DATE).format(
+                    formats.ARTICLE_TIMESTAMP
+                  )}
+                  description={description}
+                />
               )
             )}
           </PostsWrapper>
