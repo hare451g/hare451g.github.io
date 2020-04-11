@@ -13,7 +13,7 @@ function AppLayout({ children }) {
 
   useEffect(() => {
     // check if night
-    const isNight = moment().hour() >= 18;
+    const isNight = moment().hour() >= 18 || moment().hour() <= 6;
 
     if (isNight) {
       setTheme(darkTheme);
