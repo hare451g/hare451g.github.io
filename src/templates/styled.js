@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { COLOR_BODY_TEXT, COLOR_LINK_TEXT } from '../constants/colors';
 
 const PostTimestamp = styled.div`
   text-align: center;
@@ -11,7 +10,7 @@ const PostTimestamp = styled.div`
   font-size: 0.85rem;
   line-height: 0.75rem;
   text-decoration: none;
-  color: ${COLOR_BODY_TEXT};
+  color: ${props => props.theme.colors.text};
 `;
 
 const PostTitle = styled.h1`
@@ -21,7 +20,7 @@ const PostTitle = styled.h1`
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 800;
-  color: ${COLOR_BODY_TEXT};
+  color: ${props => props.theme.colors.text};
 
   @media only screen and (max-device-width: 480px) {
     font-size: 1.5rem;
@@ -31,6 +30,7 @@ const PostTitle = styled.h1`
 
 const AuthorWrapper = styled.div`
   padding: 1.5rem 0;
+  color: ${props => props.theme.colors.text};
 `;
 
 const HeroImage = styled.img`
@@ -54,6 +54,7 @@ const Description = styled.blockquote`
   text-align: center;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  color: ${props => props.theme.colors.text};
 `;
 
 const MainArticle = styled.main`
@@ -67,10 +68,11 @@ const MainArticle = styled.main`
     font-style: normal;
     line-height: 1.75rem;
     letter-spacing: 0.1px;
+    color: ${props => props.theme.colors.text};
   }
   a {
     font-family: 'Open Sans', sans-serif;
-    color: ${COLOR_LINK_TEXT};
+    color: ${props => props.theme.colors.link};
     text-decoration: underline;
   }
 
@@ -80,6 +82,7 @@ const MainArticle = styled.main`
     max-width: 100%;
     overflow-x: auto;
     cursor: text;
+    color: ${props => props.theme.colors.text};
   }
 
   img {

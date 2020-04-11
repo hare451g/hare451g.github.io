@@ -14,13 +14,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    background: ${COLOR_BACKGROUND};
+    background: ${props => props.theme.colors.background};
     height: 100vh;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
-    color: ${COLOR_BODY_TEXT};
+    color: ${props => props.theme.colors.text};
   }
 
   a {
@@ -29,10 +29,10 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: ${COLOR_BODY_TEXT};
+    color: ${props => props.theme.colors.text};
 
     :hover {
-      color: ${COLOR_LINK_TEXT};
+    color: ${props => props.theme.colors.link};
       text-decoration: underline;
     }
   }
@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
-    color: ${COLOR_BODY_TEXT};
+    color: ${props => props.theme.colors.text};
   }
 `;
 

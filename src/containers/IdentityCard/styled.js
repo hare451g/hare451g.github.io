@@ -26,6 +26,7 @@ const AuthorName = styled.div`
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;
+  color: ${props => props.theme.colors.text};
 `;
 
 const AuthorIntro = styled.div`
@@ -34,6 +35,7 @@ const AuthorIntro = styled.div`
   font-style: normal;
   font-weight: normal;
   font-size: 0.85rem;
+  color: ${props => props.theme.colors.text};
 `;
 
 export {

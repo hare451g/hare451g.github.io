@@ -35,7 +35,7 @@ const HeaderTitle = styled.h1`
   padding-left: 1rem;
 
   font-size: 1.5rem;
-  color: ${COLOR_BODY_TEXT};
+  color: ${props => props.theme.colors.text};
 
   animation: none;
 

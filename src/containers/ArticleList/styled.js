@@ -1,10 +1,4 @@
 import styled from 'styled-components';
-import {
-  COLOR_BODY_TEXT,
-  COLOR_LINK_TEXT,
-  COLOR_BACKGROUND,
-  COLOR_CHARCOAL,
-} from '../../constants/colors';
 
 const SerieWrapper = styled.div`
   margin: 2.5rem 0px;
@@ -19,7 +13,7 @@ const PostContainer = styled.div`
   flex-direction: row;
   margin: 24px 0px;
 
-  border: solid 1px ${COLOR_CHARCOAL};
+  border: solid 2px ${props => props.theme.colors.border};
   border-radius: 0.5rem;
 
   @media (max-width: 720px) {
@@ -30,36 +24,19 @@ const PostContainer = styled.div`
 
   :hover {
     animation: elevate 1.5s forwards;
-    background-color: #ffffff;
+    background-color: ${props => props.theme.colors.background};
   }
 
   @keyframes elevate {
     0% {
       box-shadow: none;
-      background-color: ${COLOR_BACKGROUND};
-    }
-    25% {
-      box-shadow: 0 3px 4px 0 rgba(229, 117, 165, 0.14),
-        0 3px 3px -2px rgba(130, 117, 229, 0.12),
-        0 1px 8px 0 rgba(117, 206, 229, 0.2);
-      background-color: #fffffa;
-    }
-    50% {
-      box-shadow: 0 3px 3px -2px rgba(130, 117, 229, 0.12),
-        0 3px 4px 0 rgba(229, 117, 165, 0.14),
-        0 1px 8px 0 rgba(117, 206, 229, 0.2);
-      background-color: #fffffa;
-    }
-    75% {
-      box-shadow: 0 1px 8px 0 rgba(117, 206, 229, 0.2),
-        0 3px 3px -2px rgba(130, 117, 229, 0.12),
-        0 3px 4px 0 rgba(229, 117, 165, 0.14);
-      background-color: #fffffa;
+      background-color: ${props => props.theme.colors.background};
     }
     100% {
-      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
-        0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-      background-color: #ffffff;
+      box-shadow: 0 3px 8px 0 rgba(229, 117, 165, 0.2),
+        0 3px 8px -2px rgba(130, 117, 229, 0.2),
+        0 3px 8px 0 rgba(117, 206, 229, 0.2);
+      background-color: ${props => props.theme.colors.background};
     }
   }
 `;
@@ -101,7 +78,7 @@ const PostTimestamp = styled.div`
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.85rem;
   text-decoration: none;
-  color: ${COLOR_BODY_TEXT};
+  color: ${props => props.theme.colors.text};
 `;
 
 const PostTitle = styled.div`
@@ -111,10 +88,10 @@ const PostTitle = styled.div`
   font-style: normal;
   font-weight: 800;
   font-size: 1rem;
-  color: ${COLOR_BODY_TEXT};
+  color: ${props => props.theme.colors.text};
 
   :hover {
-    color: ${COLOR_LINK_TEXT};
+    color: ${props => props.theme.colors.link};
   }
 `;
 
@@ -125,7 +102,7 @@ const PostDescription = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  color: ${COLOR_BODY_TEXT};
+  color: ${props => props.theme.colors.text};
 `;
 export {
   SerieWrapper,

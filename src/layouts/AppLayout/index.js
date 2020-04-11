@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { ThemeProvider } from 'styled-components';
+import moment from 'moment';
+
+import { lightTheme, darkTheme } from '../../constants/themes';
 
 import GlobalStyles from './GlobalStyles';
 import { AppLayoutWrapper } from './styled';
 
 function AppLayout({ children }) {
+  const [theme, setTheme] = useState(lightTheme);
+
+  useEffect(() => {
+    // check if night
+    const isNight = moment().hour() > 18;
+
+    if (isNight) {
+      setTheme(darkTheme);
+    }
+  }, []);
+
   return (
     <AppLayoutWrapper>
       <Helmet>
@@ -24,8 +39,10 @@ function AppLayout({ children }) {
           lazyLoad
         ></link>
       </Helmet>
-      <GlobalStyles />
-      {children}
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        {children}
+      </ThemeProvider>
     </AppLayoutWrapper>
   );
 }
