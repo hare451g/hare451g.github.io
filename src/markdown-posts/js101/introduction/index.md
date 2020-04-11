@@ -4,8 +4,8 @@ date: 2020-03-19
 description: Semuanya diawali dengan menyapa dunia~
 heroImage: https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
 series: js101
-seasonTitle: introduction
-season: 0
+seasonTitle: basic
+season: 1
 episode: 0
 isPublished: true
 ---
