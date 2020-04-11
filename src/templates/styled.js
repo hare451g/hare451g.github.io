@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLOR_BODY_TEXT, COLOR_LINK_TEXT } from '../constants/colors';
 
 const PostTimestamp = styled.div`
   text-align: center;
@@ -10,7 +11,7 @@ const PostTimestamp = styled.div`
   font-size: 0.85rem;
   line-height: 0.75rem;
   text-decoration: none;
-  color: #424242;
+  color: ${COLOR_BODY_TEXT};
 `;
 
 const PostTitle = styled.h1`
@@ -20,7 +21,7 @@ const PostTitle = styled.h1`
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 800;
-  color: #424242;
+  color: ${COLOR_BODY_TEXT};
 
   @media only screen and (max-device-width: 480px) {
     font-size: 1.5rem;
@@ -50,6 +51,7 @@ const Description = styled.blockquote`
   font-style: italic;
   font-weight: 200;
   font-family: 'IBM Plex Mono', monospace;
+  text-align: center;
   margin-inline-start: 0;
   margin-inline-end: 0;
 `;
@@ -68,7 +70,7 @@ const MainArticle = styled.main`
   }
   a {
     font-family: 'Open Sans', sans-serif;
-    color: #34558b;
+    color: ${COLOR_LINK_TEXT};
     text-decoration: underline;
   }
 
@@ -96,6 +98,19 @@ const MainArticle = styled.main`
 
   ol > li {
     margin-bottom: 1rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    th,
+    td {
+      border: 1px solid #282a36;
+      padding: 0.4rem;
+    }
+    th {
+      text-align: left;
+    }
   }
 
   /* phone only */

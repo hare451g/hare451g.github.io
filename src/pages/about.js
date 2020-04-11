@@ -14,6 +14,7 @@ function IndexPage() {
           siteMetadata {
             email
             author
+            description
           }
         }
       }
@@ -28,7 +29,10 @@ function IndexPage() {
 
   return (
     <HomeLayout>
-      <SEO title={'About'} />
+      <SEO
+        title={`About ${siteMetadata.author}`}
+        description={`Hendra Sadewa, Software engineer, javascript enthusiast | ${siteMetadata.description}`}
+      />
       <article style={{ marginTop: '2rem' }}>
         <h3>
           Hello there{' '}

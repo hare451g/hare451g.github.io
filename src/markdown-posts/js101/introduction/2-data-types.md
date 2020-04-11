@@ -1,5 +1,5 @@
 ---
-title: Data Types (Primitives)
+title: Tipe data dan primitives di Javascript
 date: 2020-03-21
 description: Mencoba memahami tipe data yang ada di dalam javascript beserta cara menggunakan variabel.
 heroImage: https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80

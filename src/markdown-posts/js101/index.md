@@ -1,5 +1,5 @@
 ---
-title: JavaScript 101
+title: Tutorial Javascript Dasar | JS101
 date: 2020-03-19
 description: Belajar dasar pemrograman javascript dengan pembawaan yang singkat dan santai.
 heroImage: https://images.unsplash.com/photo-1552308995-2baac1ad5490?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
@@ -22,7 +22,17 @@ Oke tanpa basa basi lagi berikut edisi yang tersedia dan yang akan tersedia:
 - [Hello World](/js101/introduction/)
 - [Variables and Constants](/js101/introduction/1-variables-constants/)
 - [Data Types (Primitives)](/js101/introduction/2-data-types/)
-- [Operators & Basic Operations](/js101/operators/)
+
+### Operators
+
+- [Intro to JS Operators](/js101/operators/)
+- [Assignment Operators](/js101/operators/1-assignment-operators/)
+- [Arithmetic Operators](/js101/operators/2-arithmetic-operators/)
+- [Comparison Operators](/js101/operators/3-comparison-operators/)
+- Logical Operators [Belum Tersedia]
+- String Operators [Belum Tersedia]
+- Ternary Operators [Belum Tersedia]
+- Misc. Operators [Belum Tersedia]
 
 ### Basic Functions
 

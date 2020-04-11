@@ -1,5 +1,5 @@
 ---
-title: Operator and Expression | Arithmetic
+title: Operator Aritmatika di Javascript
 date: 2020-03-26
 description: Tutorial menggunakan operator aritmatika dalam javascript untuk mengolah data numeric.
 heroImage: https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80

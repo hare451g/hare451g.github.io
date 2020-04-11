@@ -1,10 +1,9 @@
 import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 import SEO from '../containers/SEO';
 import ArticleList from '../containers/ArticleList';
 import HomeLayout from '../layouts/HomeLayout';
-import SeriesList from '../containers/SeriesList';
 
 function IndexPage(props) {
   const {
@@ -20,15 +19,20 @@ function IndexPage(props) {
           siteMetadata {
             title
             description
+            longDescription
           }
         }
       }
     `
   );
-  const { title, description } = siteMetadata;
+  const { description, longDescription } = siteMetadata;
   return (
     <HomeLayout>
-      <SEO title={title} description={description} image={siteLogo.publicURL} />
+      <SEO
+        title="Javascript Developer Blog | JS101 | Programming Tips | FOSS"
+        description={`${description} | ${longDescription}`}
+        image={siteLogo.publicURL}
+      />
       <ArticleList />
     </HomeLayout>
   );

@@ -1,8 +1,9 @@
 module.exports = {
   pathPrefix: '/hare451g.github.io',
   siteMetadata: {
-    title: `// hendra's devblog`,
+    title: `hendra sadewa's devblog`,
     description: `Personal blog of Hendra Sadewa`,
+    longDescription: `Membahas programming, Tutorial Javascript, Software opensource, dan trend teknologi dan IT di Indonesia dengan santai`,
     author: `Hendra 'hare' Sadewa`,
     authorShortIntro:
       'FOSS and JavaScript Enthusiast, addicted to ThinkPads and weird music',
@@ -46,6 +47,12 @@ module.exports = {
         theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/hareblog-icon.svg`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-3742991243246749`,
       },
     },
     {

@@ -1,4 +1,12 @@
 import styled from 'styled-components';
+import {
+  COLOR_BODY_TEXT,
+  COLOR_PINK,
+  COLOR_PURPLE,
+  COLOR_CYAN,
+  COLOR_CHARCOAL,
+} from '../../constants/colors';
+
 const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -9,8 +17,8 @@ const HeaderWrapper = styled.div`
 `;
 
 const BrandImage = styled.img`
-  height: 64px;
-  width: 64px;
+  height: 36px;
+  width: 36px;
 
   @media only screen and (max-device-width: 480px) {
     height: 32px;
@@ -27,7 +35,7 @@ const HeaderTitle = styled.h1`
   padding-left: 1rem;
 
   font-size: 1.5rem;
-  color: #424242;
+  color: ${COLOR_BODY_TEXT};
 
   animation: none;
 
@@ -38,13 +46,13 @@ const HeaderTitle = styled.h1`
 
   @keyframes changecolor {
     0% {
-      color: #d86898;
+      color: ${COLOR_PINK};
     }
     50% {
-      color: #7668d8;
+      color: ${COLOR_PURPLE};
     }
     100% {
-      color: #68c1d8;
+      color: ${COLOR_CYAN};
     }
   }
 `;

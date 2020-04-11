@@ -106,14 +106,18 @@ function ArticleList() {
 
   return seriesBySeasons.map(({ serie, seasons }) => (
     <SerieWrapper key={serie}>
-      <h2 id={serie} style={{ fontFamily: `'IBM Plex Mono', monospace` }}>
-        #{serie}
-      </h2>
       {seasons.map(({ title, entries }) => (
-        <section style={{ paddingBottom: '1rem' }}>
-          <h2>
-            {serie} / {title}
+        <section style={{ paddingBottom: '1rem' }} key={`season-${title}`}>
+          <h2
+            style={{
+              textAlign: 'center',
+              fontFamily: `'IBM Plex Mono', monospace`,
+            }}
+          >
+            {' '}
+            #{serie} | {title}
           </h2>
+
           <PostsWrapper>
             {entries.map(
               ({

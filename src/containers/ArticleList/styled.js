@@ -1,4 +1,10 @@
 import styled from 'styled-components';
+import {
+  COLOR_BODY_TEXT,
+  COLOR_LINK_TEXT,
+  COLOR_BACKGROUND,
+  COLOR_CHARCOAL,
+} from '../../constants/colors';
 
 const SerieWrapper = styled.div`
   margin: 2.5rem 0px;
@@ -13,15 +19,14 @@ const PostContainer = styled.div`
   flex-direction: row;
   margin: 24px 0px;
 
-  border: solid 1px #c1c1c1;
+  border: solid 1px ${COLOR_CHARCOAL};
+  border-radius: 0.5rem;
 
   @media (max-width: 720px) {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
   }
-
-  border-radius: 0.5rem;
 
   :hover {
     animation: elevate 1.5s forwards;
@@ -31,14 +36,30 @@ const PostContainer = styled.div`
   @keyframes elevate {
     0% {
       box-shadow: none;
+      background-color: ${COLOR_BACKGROUND};
+    }
+    25% {
+      box-shadow: 0 3px 4px 0 rgba(229, 117, 165, 0.14),
+        0 3px 3px -2px rgba(130, 117, 229, 0.12),
+        0 1px 8px 0 rgba(117, 206, 229, 0.2);
+      background-color: #fffffa;
     }
     50% {
-      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
-        0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 3px -2px rgba(130, 117, 229, 0.12),
+        0 3px 4px 0 rgba(229, 117, 165, 0.14),
+        0 1px 8px 0 rgba(117, 206, 229, 0.2);
+      background-color: #fffffa;
+    }
+    75% {
+      box-shadow: 0 1px 8px 0 rgba(117, 206, 229, 0.2),
+        0 3px 3px -2px rgba(130, 117, 229, 0.12),
+        0 3px 4px 0 rgba(229, 117, 165, 0.14);
+      background-color: #fffffa;
     }
     100% {
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
         0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: #ffffff;
     }
   }
 `;
@@ -80,7 +101,7 @@ const PostTimestamp = styled.div`
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.85rem;
   text-decoration: none;
-  color: #424242;
+  color: ${COLOR_BODY_TEXT};
 `;
 
 const PostTitle = styled.div`
@@ -90,10 +111,10 @@ const PostTitle = styled.div`
   font-style: normal;
   font-weight: 800;
   font-size: 1rem;
-  color: #424242;
+  color: ${COLOR_BODY_TEXT};
 
   :hover {
-    color: #2196f3;
+    color: ${COLOR_LINK_TEXT};
   }
 `;
 
@@ -104,7 +125,7 @@ const PostDescription = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  color: #424242;
+  color: ${COLOR_BODY_TEXT};
 `;
 export {
   SerieWrapper,

@@ -1,5 +1,5 @@
 ---
-title: Operator and Expression
+title: Operator dan ekspresi di javascript
 date: 2020-03-23
 description: Kumpulan artikel tentang operator untuk mengolah data di javascript.
 heroImage: https://images.unsplash.com/photo-1573487128671-84e3cea4f78b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=631&q=80

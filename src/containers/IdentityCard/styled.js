@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLOR_CHARCOAL } from '../../constants/colors';
 
 const IdentityCardWrapper = styled.div`
   display: flex;

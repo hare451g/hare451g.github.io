@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import { graphql, Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 
 import Header from '../containers/Header';
 import IdentityCard from '../containers/IdentityCard';
@@ -20,9 +20,14 @@ import {
 
 export default ({ data, pageContext }) => {
   const {
-    html,
-    frontmatter: { title, description, date, heroImage },
-  } = data.markdownRemark;
+    markdownRemark: {
+      html,
+      frontmatter: { title, description, date, heroImage },
+    },
+    site: {
+      siteMetadata: { longDescription: siteDescription },
+    },
+  } = data;
 
   const timeStamp = moment(date, formats.FRONT_MATTER_DATE).format(
     formats.ARTICLE_TIMESTAMP
@@ -31,13 +36,14 @@ export default ({ data, pageContext }) => {
   return (
     <AppLayout>
       <SEO
-        title={title}
-        description={description}
+        title={`${title}`}
+        description={`${description} | ${siteDescription}`}
         pathname={pageContext.slug}
         image={heroImage}
       />
       <header>
         <Header />
+        <hr />
         <Link to="/">
           <span role="img" alt="home">
             ⬅️
@@ -47,6 +53,7 @@ export default ({ data, pageContext }) => {
         <PostTitle>{title}</PostTitle>
         <PostTimestamp>{timeStamp}</PostTimestamp>
         <Description>{description}</Description>
+        <HeroImage src={heroImage} alt={title} />
         <AuthorWrapper>
           <span role="img" alt="author">
             ✍️
@@ -54,13 +61,18 @@ export default ({ data, pageContext }) => {
           Author:
           <IdentityCard />
         </AuthorWrapper>
-        <HeroImage src={heroImage} alt={title} />
       </header>
       <MainArticle>
         <article dangerouslySetInnerHTML={{ __html: html }}></article>
       </MainArticle>
 
       <footer>
+        <Link to="/">
+          <span role="img" alt="home">
+            ⬅️
+          </span>{' '}
+          Back to Home
+        </Link>
         <hr />
         <Footer />
       </footer>
@@ -70,6 +82,11 @@ export default ({ data, pageContext }) => {
 
 export const query = graphql`
   query($slug: String!) {
+    site {
+      siteMetadata {
+        longDescription
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
+import {
+  COLOR_BODY_TEXT,
+  COLOR_LINK_TEXT,
+  COLOR_BACKGROUND,
+} from '../../constants/colors';
 
-const GlobalStyles = createGlobalStyle`  
+const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Open Sans', sans-serif;
     min-height: 100%;
@@ -9,12 +14,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    background: rgb(255, 255, 250);
+    background: ${COLOR_BACKGROUND};
     height: 100vh;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
+    color: ${COLOR_BODY_TEXT};
   }
 
   a {
@@ -23,10 +29,10 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #424242;
+    color: ${COLOR_BODY_TEXT};
 
     :hover {
-      color: #2196f3;
+      color: ${COLOR_LINK_TEXT};
       text-decoration: underline;
     }
   }
@@ -34,6 +40,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
+    color: ${COLOR_BODY_TEXT};
   }
 `;
 

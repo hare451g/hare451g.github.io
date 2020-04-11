@@ -1,8 +1,8 @@
 ---
-title: Operator and Expression | Comparison
+title: Operator perbandingan di Javascript
 date: 2020-04-10
 description: Cocoklah untuk yang bingung dengan penggunaan statement yang butuh kondisi seperti looping, dan branching.
-heroImage: https://images.unsplash.com/photo-1560864495-a6bd2a912ca7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1558&q=80
+heroImage: https://images.unsplash.com/photo-1537283963865-f825e1ea7e21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80
 series: js101
 seasonTitle: operators
 season: 2
@@ -40,6 +40,8 @@ Contoh penggunaan:
 
 # Operator relasional ( > , <, >=, <= )
 
+Operator ini digunakan untuk membandingkan dua nilai numerik.
+
 Terdiri dari beberapa operator:
 
 | Symbol | Deskripsi                    |
@@ -65,14 +67,53 @@ Contoh Penggunaan:
 
 Dalam operator relational, hanya nilai saja yang dibandingkan, tak ada operator _strict_ yang dapat membandingkan nilai dan tipe.
 
-```js
-1 > '1'; // false
-1 >= '1'; // true
-1 < '1'; // false
-1 <= '1'; // true
+# Special Case, Null & Undefined
 
-1 > '2'; // false
-1 >= '2'; // false
-1 < '2'; // true
-1 <= '2'; // true
+Membandingkan `null` dan `undefined` dengan operator persamaan.
+
+```js
+null === undefined; // false
+null == undefined; // true
+
+null !== undefined; // true
+null != undefined; // false
 ```
+
+Terdapat aturan khusus dimana kedua nilai yang bersifat _falsy_ ini jika dibandingkan dengan persamaan _non strict equality_ akan bernilai true, sementara dengan operator _strict equality_ akan bersifat false, karena null dan undefined memiliki tipe yang berbeda.
+
+Membandingkan `null` dengan nilai 0 menggunakan operator relational.
+
+```js
+null > 0; // false
+null >= 0; // true
+null < 0; // false
+null <= 0; // true
+```
+
+Ketika terdapat operator relational, `null` akan dikonversi kedalam nilai numerik, yaitu 0, berikut adalah code untuk membuktikannya:
+
+```js
+null > -1; // true
+null >= 0; // true
+null <= 0; // true
+null < 1; // true
+```
+
+Membandingkan `undefined` dengan nilai 0 menggunakan operator relational.
+
+```js
+undefined > 0; // false
+undefined >= 0; // false
+undefined < 0; // false
+undefined <= 0; // false
+```
+
+Berbeda dengan `null`, `undefined` akan dikonversikan kedalam `NaN`, nilai `NaN` akan selalu menghasilkan `false` jika di bandingkan dengan bilangan lain. sehingga akan selalu menghasilkan nilai `false` seperti kode diatas.
+
+# Weird Case 0.1 + 0.2 === 0.3 returns false!
+
+Kasus ini banyak terjadi, cukup aneh memang, penjelasan singkat mengapa kode `0.1 + 0.2 === 0.3` menghasilkan `false` karena `0.1 + 0.2` tidak akan menghasilkan bilangan `0.3` melainkan bilangan `0.30000000000000004`. Ini terjadi karena javascript selalu menyimpan data numerik dengan tipe data double precision float. Penjelasan lengkap dapat di lihat di [artikel medium ini](https://medium.com/better-programming/why-is-0-1-0-2-not-equal-to-0-3-in-most-programming-languages-99432310d476).
+
+Okay, sekarang sudah siap untuk bikin kondisi buat branching dan looping nih,
+
+Cheers 🥂
