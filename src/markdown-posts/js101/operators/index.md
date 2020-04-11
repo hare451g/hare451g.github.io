@@ -18,9 +18,8 @@ Operator digunakan untuk melakukan proses pengolahan data seperti operasi artima
 2. [Arithmetic Operators](/js101/operators/2-arithmetic-operators/)
 3. [Comparison Operators](/js101/operators/3-comparison-operators/)
 4. [Logical Operators](/js101/operators/4-logical-operators/)
-5. String Operators [Belum Tersedia]
-6. Ternary Operators [Belum Tersedia]
-7. Misc. Operators [Belum Tersedia]
+5. [String Operators](/js101/operators/5-string-operator/)
+6. Ternary Operator [Belum Tersedia]
 
 # Welcome to the one of Weird Sections in Javascript
 

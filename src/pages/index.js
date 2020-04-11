@@ -21,7 +21,10 @@ function IndexPage(props) {
         allMarkdownRemark(
           limit: 3
           sort: { fields: frontmatter___date, order: DESC }
-          filter: { frontmatter: { isPublished: { eq: true } } }
+          filter: {
+            frontmatter: { isPublished: { eq: true } }
+            fields: { isFuture: { eq: false } }
+          }
         ) {
           edges {
             node {

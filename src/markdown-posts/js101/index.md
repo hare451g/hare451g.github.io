@@ -29,10 +29,9 @@ Oke tanpa basa basi lagi berikut edisi yang tersedia dan yang akan tersedia:
 - [Assignment Operators](/js101/operators/1-assignment-operators/)
 - [Arithmetic Operators](/js101/operators/2-arithmetic-operators/)
 - [Comparison Operators](/js101/operators/3-comparison-operators/)
-- Logical Operators [Belum Tersedia]
-- String Operators [Belum Tersedia]
-- Ternary Operators [Belum Tersedia]
-- Misc. Operators [Belum Tersedia]
+- [Logical Operators](/js101/operators/4-logical-operators/)
+- [String Operators](/js101/operators/5-string-operator/)
+- Ternary Operator [Belum Tersedia]
 
 ### Basic Functions
 

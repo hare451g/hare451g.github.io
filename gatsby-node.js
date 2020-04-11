@@ -1,4 +1,5 @@
 const path = require(`path`);
+const moment = require('moment');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 // Create link / slugs
@@ -7,10 +8,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode });
 
+    const now = moment();
+    const isFuture = moment(node.frontmatter.date).isAfter(now);
+
     createNodeField({
       node,
       name: `slug`,
       value: slug,
+    });
+
+    createNodeField({
+      node,
+      name: `isFuture`,
+      value: isFuture,
     });
   }
 };
@@ -25,6 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             fields {
+              isFuture
               slug
             }
           }
