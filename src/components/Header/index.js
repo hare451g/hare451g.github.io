@@ -1,12 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
-import {
-  HeaderWrapper,
-  BrandImage,
-  HeaderTitle,
-  HeaderSubtitle,
-} from './styled';
+import { HeaderWrapper, BrandImage, NavWrapper, NavLink } from './styled';
 
 function Header() {
   const { site, websiteLogo } = useStaticQuery(
@@ -26,17 +21,20 @@ function Header() {
   );
   return (
     <HeaderWrapper>
-      <Link to="/">
-        <BrandImage
-          src={websiteLogo.publicURL}
-          alt="hare451g brand"
-          height={72}
-        />
-      </Link>
-      <Link to="/">
-        <HeaderTitle>{site.siteMetadata.title}</HeaderTitle>
-        <HeaderSubtitle>{site.siteMetadata.description}</HeaderSubtitle>
-      </Link>
+      <NavWrapper>
+        <Link to="/">
+          <BrandImage
+            src={websiteLogo.publicURL}
+            alt="hare451g brand"
+            height={32}
+          />
+        </Link>
+        <NavLink to="/">Hendra Sadewa</NavLink>
+      </NavWrapper>
+      <NavWrapper>
+        <NavLink to="/blog">blog</NavLink>
+        <NavLink to="/about">about</NavLink>
+      </NavWrapper>
     </HeaderWrapper>
   );
 }

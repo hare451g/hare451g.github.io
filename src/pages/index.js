@@ -29,11 +29,10 @@ function IndexPage(props) {
   return (
     <HomeLayout>
       <SEO
-        title="Javascript Developer Blog | JS101 | Programming Tips | FOSS"
+        title="Home"
         description={`${description} | ${longDescription}`}
         image={siteLogo.publicURL}
       />
-      <ArticleList />
     </HomeLayout>
   );
 }

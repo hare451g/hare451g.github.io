@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 import { COLOR_PINK, COLOR_PURPLE, COLOR_CYAN } from '../../constants/colors';
+import { Link } from 'gatsby';
 
 const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
+  background: ${props => props.theme.colors.background};
 `;
 
 const BrandImage = styled.img`
@@ -20,18 +22,24 @@ const BrandImage = styled.img`
   }
 `;
 
-const HeaderTitle = styled.h1`
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  margin: 0;
-  padding-bottom: 0.2rem;
-  padding-left: 1rem;
+const NavWrapper = styled.h1`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   font-size: 1.5rem;
   color: ${props => props.theme.colors.text};
+`;
 
-  animation: none;
+const NavLink = styled(Link)`
+  font-family: 'Open Sans' sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  padding-left: 1rem;
+
+  @media only screen and (max-device-width: 480px) {
+    font-size: 0.7rem;
+  }
 
   :hover {
     animation: changecolor 1s infinite;
@@ -51,15 +59,4 @@ const HeaderTitle = styled.h1`
   }
 `;
 
-const HeaderSubtitle = styled.div`
-  font-family: 'Open Sans' sans-serif;
-  font-weight: normal;
-  font-size: 1rem;
-  padding-left: 1rem;
-
-  @media only screen and (max-device-width: 480px) {
-    font-size: 0.7rem;
-  }
-`;
-
-export { HeaderWrapper, BrandImage, HeaderTitle, HeaderSubtitle };
+export { HeaderWrapper, BrandImage, NavWrapper, NavLink };
