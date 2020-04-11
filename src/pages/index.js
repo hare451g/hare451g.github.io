@@ -1,8 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import SEO from '../containers/SEO';
-import ArticleList from '../containers/ArticleList';
+import SEO from '../components/SEO';
+import ArticleList from '../components/ArticleList';
 import HomeLayout from '../layouts/HomeLayout';
 
 function IndexPage(props) {

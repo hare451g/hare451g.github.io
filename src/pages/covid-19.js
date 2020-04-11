@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { get } from 'axios';
 
 import HomeLayout from '../layouts/HomeLayout';
-import SummaryCard from '../containers/SummaryCard';
-import CoronaTable from '../containers/CoronaTable';
-import SEO from '../containers/SEO';
+import SummaryCard from '../components/SummaryCard';
+import CoronaTable from '../components/CoronaTable';
+import SEO from '../components/SEO';
 
 const CardDeck = styled.div`
   display: flex;

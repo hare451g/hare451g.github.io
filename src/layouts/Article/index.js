@@ -1,13 +1,13 @@
 import React from 'react';
 import moment from 'moment';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
-import Header from '../containers/Header';
-import IdentityCard from '../containers/IdentityCard';
-import Footer from '../containers/Footer';
-import SEO from '../containers/SEO';
-import AppLayout from '../layouts/AppLayout';
-import formats from '../constants/formats';
+import Header from '../../components/Header';
+import IdentityCard from '../../components/IdentityCard';
+import Footer from '../../components/Footer';
+import SEO from '../../components/SEO';
+import AppLayout from '../../layouts/AppLayout';
+import formats from '../../constants/formats';
 
 import {
   PostTimestamp,

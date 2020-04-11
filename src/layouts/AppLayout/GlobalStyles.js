@@ -1,9 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import {
-  COLOR_BODY_TEXT,
-  COLOR_LINK_TEXT,
-  COLOR_BACKGROUND,
-} from '../../constants/colors';
 
 const GlobalStyles = createGlobalStyle`
   body {

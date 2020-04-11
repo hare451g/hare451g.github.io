@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import SEO from '../containers/SEO';
+import SEO from '../components/SEO';
 
 import HomeLayout from '../layouts/HomeLayout';
 

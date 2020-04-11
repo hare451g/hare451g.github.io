@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from '../../containers/Header';
-import IdentityCard from '../../containers/IdentityCard';
-import Footer from '../../containers/Footer';
+import Header from '../../components/Header';
+import IdentityCard from '../../components/IdentityCard';
+import Footer from '../../components/Footer';
 
 import AppLayout from '../AppLayout';
 

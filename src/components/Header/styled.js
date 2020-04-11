@@ -1,11 +1,5 @@
 import styled from 'styled-components';
-import {
-  COLOR_BODY_TEXT,
-  COLOR_PINK,
-  COLOR_PURPLE,
-  COLOR_CYAN,
-  COLOR_CHARCOAL,
-} from '../../constants/colors';
+import { COLOR_PINK, COLOR_PURPLE, COLOR_CYAN } from '../../constants/colors';
 
 const HeaderWrapper = styled.div`
   display: flex;
