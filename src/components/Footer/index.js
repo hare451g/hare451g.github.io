@@ -18,11 +18,11 @@ function Footer() {
     `
   );
   return (
-    <div>
+    <p>
       <Link href={site.siteMetadata.twitterURL}>twitter</Link> -{' '}
       <Link href={site.siteMetadata.instagramURL}>instagram</Link> -{' '}
       <Link href={site.siteMetadata.linkedInURL}>linkedIn</Link>
-    </div>
+    </p>
   );
 }
 

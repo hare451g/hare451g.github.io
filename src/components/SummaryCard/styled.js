@@ -5,6 +5,7 @@ const CardWrapper = styled.div`
   border: 0.5px solid #9f9f9f;
   border-radius: 0.5rem;
   min-width: 180px;
+  color: ${props => props.theme.colors.text};
 
   @media only screen and (max-device-width: 480px) {
     margin-bottom: 1rem;
@@ -33,6 +34,7 @@ const CardWrapper = styled.div`
 
 const ValueLabel = styled.h3`
   text-align: right;
+  color: ${props => props.theme.colors.text};
 `;
 
 export { CardWrapper, ValueLabel };

@@ -35,7 +35,6 @@ function KawalCorona() {
   const fetchAPI = async () => {
     setLoading(true);
     const response = await get('https://api.kawalcorona.com/');
-    console.log('isfetching');
     if (response.data) {
       setData(response.data);
       setIndonesiaOnly(
@@ -167,7 +166,9 @@ function KawalCorona() {
         </h2>
         <CoronaTable isLoading={isLoading} data={data} />
         <div>
-          Powered by <a href="kawalcorona.com">kawalcorona.com</a>
+          <p>
+            Powered by <a href="kawalcorona.com">kawalcorona.com</a>
+          </p>
         </div>
 
         <h2>Panic Buying is a Stupid Move</h2>

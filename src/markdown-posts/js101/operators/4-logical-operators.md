@@ -7,7 +7,7 @@ series: js101
 seasonTitle: operators
 season: 2
 episode: 4
-isPublished: false
+isPublished: true
 ---
 
 Logical operator biasanya sih buat combine dua buah operasi yang menghasilkan nilai boolean, dan akan menghasilkan nilai boolean juga. Cara kerja dari operator ini seperti gerbang logika, sesuai dengan gerbang logika, operator ini terdiri dari:

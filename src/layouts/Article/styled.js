@@ -108,11 +108,14 @@ const MainArticle = styled.main`
     border-collapse: collapse;
     th,
     td {
-      border: 1px solid #282a36;
+      border: 1px solid ${props => props.theme.colors.text};
       padding: 0.4rem;
+
+      color: ${props => props.theme.colors.text};
     }
     th {
       text-align: left;
+      color: ${props => props.theme.colors.text};
     }
   }
 

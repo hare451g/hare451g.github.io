@@ -17,7 +17,7 @@ Operator digunakan untuk melakukan proses pengolahan data seperti operasi artima
 1. [Assignment Operators](/js101/operators/1-assignment-operators/)
 2. [Arithmetic Operators](/js101/operators/2-arithmetic-operators/)
 3. [Comparison Operators](/js101/operators/3-comparison-operators/)
-4. Logical Operators [Belum Tersedia]
+4. [Logical Operators](/js101/operators/4-logical-operators/)
 5. String Operators [Belum Tersedia]
 6. Ternary Operators [Belum Tersedia]
 7. Misc. Operators [Belum Tersedia]

@@ -22,7 +22,7 @@ export default ({ data, pageContext }) => {
   const {
     markdownRemark: {
       html,
-      frontmatter: { title, description, date, heroImage },
+      frontmatter: { title, description, date, heroImage, series },
     },
     site: {
       siteMetadata: { longDescription: siteDescription },
@@ -44,11 +44,11 @@ export default ({ data, pageContext }) => {
       <header>
         <Header />
         <hr />
-        <Link to="/">
+        <Link to={`/blog/#${series}`}>
           <span role="img" alt="home">
             ⬅️
           </span>{' '}
-          Back to Home
+          Back to blog home
         </Link>
         <PostTitle>{title}</PostTitle>
         <PostTimestamp>{timeStamp}</PostTimestamp>
@@ -67,11 +67,11 @@ export default ({ data, pageContext }) => {
       </MainArticle>
 
       <footer>
-        <Link to="/">
+        <Link to={`/blog/#${series}`}>
           <span role="img" alt="home">
             ⬅️
           </span>{' '}
-          Back to Home
+          Back to blog home
         </Link>
         <hr />
         <Footer />

@@ -37,6 +37,13 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.5rem;
     color: ${props => props.theme.colors.text};
   }
+
+  ul, ol {
+    color: ${props => props.theme.colors.text};
+  }
+  li {
+    color: ${props => props.theme.colors.text}
+  }
 `;
 
 export default GlobalStyles;

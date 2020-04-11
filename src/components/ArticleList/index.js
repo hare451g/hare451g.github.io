@@ -28,6 +28,7 @@ function ArticleList({ posts, availableSeries }) {
               textAlign: 'center',
               fontFamily: `'IBM Plex Mono', monospace`,
             }}
+            id={serie}
           >
             {' '}
             #{serie} | {title}

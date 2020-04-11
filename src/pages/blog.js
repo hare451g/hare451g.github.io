@@ -66,6 +66,7 @@ function BlogPage() {
         description={`${description} | ${longDescription}`}
         image={siteLogo.publicURL}
       />
+      <h1>Blog Posts</h1>
       <ArticleList posts={posts} availableSeries={availableSeries} />
     </HomeLayout>
   );

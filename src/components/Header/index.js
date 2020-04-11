@@ -34,6 +34,7 @@ function Header() {
       <NavWrapper>
         <NavLink to="/blog">blog</NavLink>
         <NavLink to="/about">about</NavLink>
+        <NavLink to="/covid-19">c-19</NavLink>
       </NavWrapper>
     </HeaderWrapper>
   );

@@ -5,7 +5,7 @@ const TableWrapper = styled.div`
   border-radius: 0.5rem;
   margin-top: 0.5rem;
 
-  border: 0.5px solid #9f9f9f;
+  border: 0.5px solid ${props => props.theme.colors.text};
   @media only screen and (max-device-width: 480px) {
     margin-bottom: 1rem;
     width: 100%;
@@ -36,8 +36,9 @@ const Table = styled.table`
   border-collapse: collapse;
   th,
   td {
-    border: 1px solid #eaedf1;
+    border: 1px solid ${props => props.theme.colors.text};
     padding: 0.4rem;
+    color: ${props => props.theme.colors.text};
   }
 `;
 
