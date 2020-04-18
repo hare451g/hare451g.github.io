@@ -53,7 +53,7 @@ export default ({ data, pageContext }) => {
         <Header />
         <hr />
         <Link to={`/blog/#${series}`}>
-          <span role="img" alt="home">
+          <span role="img" aria-label="back arrow emoji">
             ⬅️
           </span>{' '}
           Back to blog home
@@ -63,6 +63,9 @@ export default ({ data, pageContext }) => {
         <Description>{description}</Description>
         <HeroImage src={heroImage} alt={title} />
         <PostTimestamp>
+          <span role="img" aria-label="flashing camera emoji">
+            📸
+          </span>{' '}
           Hero image taken by{' '}
           <Link to={`https://unsplash.com/@${unsplashAccount}`}>
             {photographer}
@@ -70,7 +73,7 @@ export default ({ data, pageContext }) => {
           powered by <Link to="https://unsplash.com/">unsplash</Link>
         </PostTimestamp>
         <AuthorWrapper>
-          <span role="img" alt="author">
+          <span role="img" aria-label="author emoji">
             ✍️
           </span>{' '}
           Author:
@@ -83,7 +86,7 @@ export default ({ data, pageContext }) => {
 
       <footer>
         <Link to={`/blog/#${series}`}>
-          <span role="img" alt="home">
+          <span role="img" aria-label="back arrow emoji">
             ⬅️
           </span>{' '}
           Back to blog home
