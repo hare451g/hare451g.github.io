@@ -1,23 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { get } from 'axios';
 
 import HomeLayout from '../layouts/HomeLayout';
-import SummaryCard from '../components/SummaryCard';
-import CoronaTable from '../components/CoronaTable';
 import SEO from '../components/SEO';
-
-const CardDeck = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  @media only screen and (max-device-width: 480px) {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-`;
 
 const ContentWrapper = styled.div`
   img {
@@ -27,29 +12,6 @@ const ContentWrapper = styled.div`
 `;
 
 function KawalCorona() {
-  const [data, setData] = useState([]);
-  const [indonesiaOnly, setIndonesiaOnly] = useState({});
-  const [isLoading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-
-  const fetchAPI = async () => {
-    setLoading(true);
-    const response = await get('https://api.kawalcorona.com/');
-    if (response.data) {
-      setData(response.data);
-      setIndonesiaOnly(
-        response.data.find(
-          ({ attributes: { Country_Region } }) => Country_Region === 'Indonesia'
-        )
-      );
-    } else {
-      setError(response.error || 'Terjadi kesalahan');
-      console.error(error);
-    }
-
-    setLoading(false);
-  };
-
   return (
     <HomeLayout>
       <SEO
