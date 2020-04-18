@@ -50,10 +50,6 @@ function KawalCorona() {
     setLoading(false);
   };
 
-  useEffect(() => {
-    fetchAPI();
-  }, []);
-
   return (
     <HomeLayout>
       <SEO
@@ -84,16 +80,15 @@ function KawalCorona() {
             dokter.
           </p>
           <h2>Tidak Perlu Panik</h2>
-          <p>
-            Dikutip dari artikel WHO:
-            <blockquote>
-              "<b>Sejumlah kecil kasus penyakit ini menyebabkan kematian</b>.
-              Orang lanjut usia (lansia) dan orang-orang dengan kondisi medis
-              yang dimiliki sebelumnya (seperti diabetes dan penyakit jantung)
-              terindikasi lebih rentan menderita penyakit yang parah karena
-              virus ini."
-            </blockquote>
-          </p>
+          <p>Dikutip dari artikel WHO:</p>
+          <blockquote>
+            "<b>Sejumlah kecil kasus penyakit ini menyebabkan kematian</b>.
+            Orang lanjut usia (lansia) dan orang-orang dengan kondisi medis yang
+            dimiliki sebelumnya (seperti diabetes dan penyakit jantung)
+            terindikasi lebih rentan menderita penyakit yang parah karena virus
+            ini."
+          </blockquote>
+
           <p>
             Jadi tidak perlu khawatir, karena COVID-19 dapat sembuh. Namun kita
             tidak boleh bodoamat dengan COVID-19 dan sotoy malah sok ngga peduli
@@ -101,27 +96,26 @@ function KawalCorona() {
             yang dapat menular dengan cepat.
           </p>
           <h2>Beberapa cara sederhana untuk melindungi diri Anda</h2>
-          <p>
-            <img
-              src="https://media.giphy.com/media/d7HWDCV6t72iRm9vPh/giphy.gif"
-              alt="wash yo hand"
-            />
-            <ul>
-              <li>Cuci tangan dengan sabun</li>
-              <li>
-                Pakai masker kalo berhubungan langsung dengan penderita
-                COVID-19, kalo sehat wal-alfiat ngga usah bos!
-              </li>
-              <li>
-                Jangan sentuh muka sebelum cuci tangan, untuk menghindari
-                terhirupnya partikel yang menempel di tangan.
-              </li>
-              <li>
-                Jika ngga penting-penting amat, ngga usahlah keluar rumah, atau
-                ngumpul ditempat yang ramai.
-              </li>
-            </ul>
-          </p>
+
+          <img
+            src="https://media.giphy.com/media/d7HWDCV6t72iRm9vPh/giphy.gif"
+            alt="wash yo hand"
+          />
+          <ul>
+            <li>Cuci tangan dengan sabun</li>
+            <li>
+              Pakai masker kalo berhubungan langsung dengan penderita COVID-19,
+              kalo sehat wal-alfiat ngga usah bos!
+            </li>
+            <li>
+              Jangan sentuh muka sebelum cuci tangan, untuk menghindari
+              terhirupnya partikel yang menempel di tangan.
+            </li>
+            <li>
+              Jika ngga penting-penting amat, ngga usahlah keluar rumah, atau
+              ngumpul ditempat yang ramai.
+            </li>
+          </ul>
 
           <h2>#dirumahAja</h2>
           <img
@@ -134,42 +128,6 @@ function KawalCorona() {
             cara ini kita dapat mengurangi kemungkinan kita terpapar virus.
           </p>
         </article>
-        {!isLoading && indonesiaOnly && indonesiaOnly.attributes && (
-          <>
-            <h2>
-              <span role="img" aria-label="indonesia">
-                🇮🇩
-              </span>{' '}
-              Sebaran COVID-19, di Indonesia:
-            </h2>
-            <CardDeck>
-              <SummaryCard
-                headerLabel="Total Positif"
-                value={`${indonesiaOnly.attributes.Active} Kasus`}
-              />
-              <SummaryCard
-                headerLabel="Total Sembuh"
-                value={`${indonesiaOnly.attributes.Recovered} Kasus`}
-              />
-              <SummaryCard
-                headerLabel="Total Meninggal"
-                value={`${indonesiaOnly.attributes.Deaths} Kasus`}
-              />
-            </CardDeck>
-          </>
-        )}
-        <h2>
-          <span role="img" aria-label="world">
-            🇮🗺️
-          </span>{' '}
-          Sebaran COVID-19 Diseluruh Dunia
-        </h2>
-        <CoronaTable isLoading={isLoading} data={data} />
-        <div>
-          <p>
-            Powered by <a href="kawalcorona.com">kawalcorona.com</a>
-          </p>
-        </div>
 
         <h2>Panic Buying is a Stupid Move</h2>
         <img

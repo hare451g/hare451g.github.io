@@ -52,11 +52,13 @@ function CoronaTable({ data = [], isLoading }) {
     >
       <Table>
         <thead>
-          <th>Negara</th>
-          <th>Terkonfirmasi</th>
-          <th>Aktif</th>
-          <th>Sembuh</th>
-          <th>Meninggal</th>
+          <tr>
+            <th>Negara</th>
+            <th>Terkonfirmasi</th>
+            <th>Aktif</th>
+            <th>Sembuh</th>
+            <th>Meninggal</th>
+          </tr>
         </thead>
         <tbody>
           {isLoading ? (
