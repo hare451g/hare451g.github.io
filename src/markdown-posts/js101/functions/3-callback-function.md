@@ -9,5 +9,5 @@ series: js101
 seasonTitle: functions
 season: 3
 episode: 3
-isPublished: true
+isPublished: false
 ---
