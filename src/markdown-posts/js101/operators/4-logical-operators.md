@@ -3,6 +3,8 @@ title: Operator logika di Javascript
 date: 2020-04-11
 description: Biasanya sih buat combine dua buah operasi yang menghasilkan nilai boolean.
 heroImage: https://images.unsplash.com/photo-1534224039826-c7a0eda0e6b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80
+photographer: israel palacio
+unsplashAccount: othentikisra
 series: js101
 seasonTitle: operators
 season: 2

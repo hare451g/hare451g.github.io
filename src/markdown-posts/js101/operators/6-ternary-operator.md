@@ -2,7 +2,9 @@
 title: Kenalan dengan ternary operator
 date: 2020-04-13
 description: Buat yang males pake if - else
-heroImage: https://images.unsplash.com/photo-1586256053009-a7810eb70351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80
+heroImage: https://images.unsplash.com/photo-1533073526757-2c8ca1df9f1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+photographer: Javier Allegue Barros
+unsplashAccount: soymeraki
 series: js101
 seasonTitle: operators
 season: 2

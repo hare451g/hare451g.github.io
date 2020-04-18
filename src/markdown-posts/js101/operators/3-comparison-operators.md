@@ -2,7 +2,9 @@
 title: Operator perbandingan di Javascript
 date: 2020-04-10
 description: Cocoklah untuk yang bingung dengan penggunaan statement yang butuh kondisi seperti looping, dan branching.
-heroImage: https://images.unsplash.com/photo-1537283963865-f825e1ea7e21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80
+heroImage: https://images.unsplash.com/photo-1560864495-a6bd2a912ca7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1258&q=80
+photographer: Coffee Geek
+unsplashAccount: coffeegeek
 series: js101
 seasonTitle: operators
 season: 2

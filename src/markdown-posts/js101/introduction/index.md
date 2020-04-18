@@ -2,7 +2,9 @@
 title: Mengenal Dasar Javascript, Hello World!
 date: 2020-03-19
 description: Semuanya diawali dengan menyapa dunia~
-heroImage: https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+heroImage: https://images.unsplash.com/photo-1553404955-af4e8fc7f99f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60
+photographer: Kevin Butz
+unsplashAccount: kevin_butz
 series: js101
 seasonTitle: basic
 season: 1

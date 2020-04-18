@@ -2,7 +2,9 @@
 title: Hello World
 date: 2020-03-18
 description: I re-build this site, again. . .
-heroImage: https://media.giphy.com/media/QBGYWFjnggIZ8fMjdt/giphy.gif
+heroImage: https://images.unsplash.com/photo-1499708033851-36373d056976?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+photographer: NeONBRAND
+unsplashAccount: neonbrand
 series: journal
 seasonTitle: Year - 2020
 season: 2020

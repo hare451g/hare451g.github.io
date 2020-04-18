@@ -2,7 +2,9 @@
 title: Operator untuk mengolah string di javascript
 date: 2020-04-12
 description: Berguna untuk yang mau gabungin dua buah string dengan mudah.
-heroImage: https://images.unsplash.com/photo-1492936821111-5776be502cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+heroImage: https://images.unsplash.com/photo-1535587566541-97121a128dc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+photographer: Caio Silva
+unsplashAccount: caiohenriquesilva
 series: js101
 seasonTitle: operators
 season: 2

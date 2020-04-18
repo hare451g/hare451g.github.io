@@ -3,6 +3,8 @@ title: Operator dan ekspresi di javascript
 date: 2020-03-23
 description: Kumpulan artikel tentang operator untuk mengolah data di javascript.
 heroImage: https://images.unsplash.com/photo-1573487128671-84e3cea4f78b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=631&q=80
+photographer: Science in HD
+unsplashAccount: scienceinhd
 series: js101
 seasonTitle: operators
 season: 2
@@ -19,7 +21,7 @@ Operator digunakan untuk melakukan proses pengolahan data seperti operasi artima
 3. [Comparison Operators](/js101/operators/3-comparison-operators/)
 4. [Logical Operators](/js101/operators/4-logical-operators/)
 5. [String Operators](/js101/operators/5-string-operator/)
-6. Ternary Operator [Belum Tersedia]
+6. [Ternary Operator](/js101/operators/6-ternary-operator/)
 
 # Welcome to the one of Weird Sections in Javascript
 

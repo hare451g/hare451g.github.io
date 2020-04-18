@@ -2,9 +2,11 @@
 title: Tutorial Javascript Dasar | JS101
 date: 2020-03-19
 description: Belajar dasar pemrograman javascript dengan pembawaan yang singkat dan santai.
-heroImage: https://images.unsplash.com/photo-1552308995-2baac1ad5490?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+heroImage: https://images.unsplash.com/photo-1543966888-7c1dc482a810?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1381&q=80
+photographer: Paul Esch-Laurent
+unsplashAccount: pinjasaur
 series: js101
-seasonTitle: intorduction
+seasonTitle: intro
 season: 1
 episode: 0
 isPublished: true
@@ -34,12 +36,14 @@ Oke tanpa basa basi lagi berikut edisi yang tersedia dan yang akan tersedia:
 - [Comparison Operators](/js101/operators/3-comparison-operators/)
 - [Logical Operators](/js101/operators/4-logical-operators/)
 - [String Operators](/js101/operators/5-string-operator/)
-- Ternary Operator [Belum Tersedia]
+- [Ternary Operator](/js101/operators/6-ternary-operator/)
 
 ### Basic Functions
 
 - Functions [*belum tersedia*]
 - Function Vs Arrow Functions [*belum tersedia*]
+- Scope - const / var / let [*belum tersedia*]
+- Callback Functions [*belum tersedia*]
 
 ### Controlling Your Program
 
@@ -49,11 +53,6 @@ Oke tanpa basa basi lagi berikut edisi yang tersedia dan yang akan tersedia:
 - Looping ( for in ) [*belum tersedia*]
 - Looping ( for of ) [*belum tersedia*]
 - Looping ( while ) [*belum tersedia*]
-
-### Function Again
-
-- Callback Functions [*belum tersedia*]
-- Scope - const / var / let [*belum tersedia*]
 
 ### Having fun with Array
 

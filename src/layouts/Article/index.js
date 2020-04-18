@@ -22,7 +22,15 @@ export default ({ data, pageContext }) => {
   const {
     markdownRemark: {
       html,
-      frontmatter: { title, description, date, heroImage, series },
+      frontmatter: {
+        title,
+        description,
+        date,
+        heroImage,
+        series,
+        photographer,
+        unsplashAccount,
+      },
     },
     site: {
       siteMetadata: { longDescription: siteDescription },
@@ -54,6 +62,13 @@ export default ({ data, pageContext }) => {
         <PostTimestamp>{timeStamp}</PostTimestamp>
         <Description>{description}</Description>
         <HeroImage src={heroImage} alt={title} />
+        <PostTimestamp>
+          Hero image taken by{' '}
+          <Link to={`https://unsplash.com/@${unsplashAccount}`}>
+            {photographer}
+          </Link>{' '}
+          powered by <Link to="https://unsplash.com/">unsplash</Link>
+        </PostTimestamp>
         <AuthorWrapper>
           <span role="img" alt="author">
             ✍️
@@ -95,6 +110,8 @@ export const query = graphql`
         description
         heroImage
         series
+        photographer
+        unsplashAccount
       }
     }
   }

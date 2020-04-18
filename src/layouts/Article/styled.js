@@ -11,6 +11,14 @@ const PostTimestamp = styled.div`
   line-height: 0.75rem;
   text-decoration: none;
   color: ${props => props.theme.colors.text};
+
+  a {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.85rem;
+    line-height: 0.75rem;
+    text-decoration: underline;
+  }
 `;
 
 const PostTitle = styled.h1`

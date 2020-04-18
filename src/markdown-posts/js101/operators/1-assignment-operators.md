@@ -3,6 +3,8 @@ title: Operator assignment di Javascript
 date: 2020-03-25
 description: Operator untuk mengisi nilai variabel, beserta teknik seperti destructuring variabel dari suatu object atau array.
 heroImage: https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80
+photographer: Andrew Neel
+unsplashAccount: andrewtneel
 series: js101
 seasonTitle: operators
 season: 2

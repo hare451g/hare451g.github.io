@@ -2,7 +2,9 @@
 title: Variabel dan konstanta di Javascript
 date: 2020-03-20
 description: Mencoba mengenal, memahami dan menggunakan variabel dan konstanta dalam javascript.
-heroImage: https://images.unsplash.com/photo-1485843326614-60be3bf87f99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80
+heroImage: https://images.unsplash.com/photo-1527931372109-865f33dff725?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80
+photographer: s2 art
+unsplashAccount: s2artz
 series: js101
 seasonTitle: basic
 season: 1

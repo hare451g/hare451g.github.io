@@ -3,6 +3,8 @@ title: Bahas core dari pemrograman dengan studi Kasus
 date: 2020-03-29
 description: Untuk yang ingin memahami pemrograman, tapi bingung mulai dari mana
 heroImage: https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80
+photographer: Ian Schneider
+unsplashAccount: goian
 series: journal
 seasonTitle: Year - 2020
 season: 2020
