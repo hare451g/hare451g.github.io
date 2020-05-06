@@ -13,7 +13,7 @@ function AppLayout({ children }) {
 
   useEffect(() => {
     // check if night
-    const isNight = moment().hour() >= 18 || moment().hour() <= 6;
+    const isNight = moment().hour() >= 18 || moment().hour() <= 4;
 
     if (isNight) {
       setTheme(darkTheme);
@@ -24,12 +24,7 @@ function AppLayout({ children }) {
     <AppLayoutWrapper>
       <Helmet>
         <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans"
-          rel="stylesheet"
-          lazyLoad
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
           rel="stylesheet"
           lazyLoad
         />

@@ -21,7 +21,7 @@ const AuthorDescriptionWrapper = styled.div`
 `;
 
 const AuthorName = styled.div`
-  font-family: 'Open Sans';
+  font-family: ${props => props.theme.fonts.secondary};
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;
@@ -29,7 +29,7 @@ const AuthorName = styled.div`
 `;
 
 const AuthorIntro = styled.div`
-  font-family: 'Open Sans';
+  font-family: ${props => props.theme.fonts.secondary};
   padding: 2px 0px;
   font-style: normal;
   font-weight: normal;

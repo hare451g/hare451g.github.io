@@ -67,7 +67,7 @@ const PostHeroImageContainer = styled.div`
 
 const PostTimestamp = styled.div`
   padding-top: 1rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: ${props => props.theme.fonts.monospace};
   font-size: 0.85rem;
   text-decoration: none;
   color: ${props => props.theme.colors.text};
@@ -76,7 +76,7 @@ const PostTimestamp = styled.div`
 const PostTitle = styled.div`
   padding: 0.2rem 0;
   padding-right: 1rem;
-  font-family: 'Open Sans';
+  font-family: ${props => props.theme.fonts.secondary};
   font-style: normal;
   font-weight: 800;
   font-size: 1rem;
@@ -90,7 +90,7 @@ const PostTitle = styled.div`
 const PostDescription = styled.div`
   padding: 0.5rem 0;
   padding-right: 0.75rem;
-  font-family: 'Open Sans';
+  font-family: ${props => props.theme.fonts.secondary};
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;

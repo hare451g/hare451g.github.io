@@ -2,24 +2,30 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   body {
-    font-family: 'Open Sans', sans-serif;
     min-height: 100%;
-    font-size: 16px;
     margin: 0;
   }
 
   html {
     background: ${props => props.theme.colors.background};
     height: 100vh;
+    font-size: 16px;
   }
   
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+  h1, h2, h3, h4, h5, h6, a {
+    font-family: ${props => props.theme.fonts.primary};
     color: ${props => props.theme.colors.text};
   }
 
+  p, li {
+    font-family: ${props => props.theme.fonts.secondary};
+  }
+
+  code > * {
+    font-family: ${props => props.theme.fonts.monospace};
+  }
+
   a {
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: bold;
@@ -30,19 +36,6 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.colors.link};
       text-decoration: underline;
     }
-  }
-  p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: ${props => props.theme.colors.text};
-  }
-
-  ul, ol {
-    color: ${props => props.theme.colors.text};
-  }
-  li {
-    color: ${props => props.theme.colors.text}
   }
 `;
 

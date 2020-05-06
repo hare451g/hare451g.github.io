@@ -32,7 +32,7 @@ const NavWrapper = styled.h1`
 `;
 
 const NavLink = styled(Link)`
-  font-family: 'Open Sans' sans-serif;
+  font-family: ${props => props.theme.fonts.secondary};
   font-weight: normal;
   font-size: 1rem;
   padding-left: 1rem;

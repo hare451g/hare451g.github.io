@@ -4,7 +4,7 @@ const PostTimestamp = styled.div`
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: ${props => props.theme.fonts.monospace};
   font-style: normal;
   font-weight: 300;
   font-size: 0.85rem;
@@ -25,7 +25,7 @@ const PostTitle = styled.h1`
   padding-bottom: 0.1rem;
   margin-bottom: 0.1rem;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: ${props => props.theme.fonts.secondary};
   font-style: normal;
   font-weight: 800;
   color: ${props => props.theme.colors.text};
@@ -58,7 +58,7 @@ const HeroImage = styled.img`
 const Description = styled.blockquote`
   font-style: italic;
   font-weight: 200;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: ${props => props.theme.fonts.monospace};
   text-align: center;
   margin-inline-start: 0;
   margin-inline-end: 0;
@@ -70,7 +70,7 @@ const MainArticle = styled.main`
   max-width: 100%;
 
   p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: ${props => props.theme.fonts.secondary};
     font-size: 1.2rem;
     font-weight: 400;
     font-style: normal;
@@ -79,7 +79,7 @@ const MainArticle = styled.main`
     color: ${props => props.theme.colors.text};
   }
   a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: ${props => props.theme.fonts.secondary};
     color: ${props => props.theme.colors.link};
     text-decoration: underline;
   }
@@ -99,7 +99,7 @@ const MainArticle = styled.main`
   }
 
   pre > code {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: ${props => props.theme.fonts.monospace};
     font-weight: 600;
   }
 

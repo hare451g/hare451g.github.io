@@ -23,7 +23,7 @@ const TextWrapper = styled.div`
 
 const RoleName = styled.div`
   color: ${props => props.theme.colors.text};
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: ${props => props.theme.fonts.monospace};
   font-weight: bold;
   font-size: 1rem;
   line-height: 1.85rem;
@@ -31,14 +31,14 @@ const RoleName = styled.div`
 
 const CompanyName = styled.div`
   color: ${props => props.theme.colors.text};
-  font-family: 'Open Sans', monospace;
+  font-family: ${props => props.theme.fonts.secondary};
 
   line-height: 1.85rem;
 `;
 
 const PeriodLabel = styled.div`
   color: ${props => props.theme.colors.text};
-  font-family: 'Open Sans', monospace;
+  font-family: ${props => props.theme.fonts.secondary};
   font-size: 1rem;
   line-height: 1.85rem;
 `;

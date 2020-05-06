@@ -26,7 +26,7 @@ function ArticleList({ posts, availableSeries }) {
           <h2
             style={{
               textAlign: 'center',
-              fontFamily: `'IBM Plex Mono', monospace`,
+              fontFamily: `${props => props.theme.fonts.monospace};`,
             }}
             id={serie}
           >
