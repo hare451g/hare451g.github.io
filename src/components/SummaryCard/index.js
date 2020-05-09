@@ -1,14 +1,12 @@
 import React from 'react';
 
-import { CardWrapper, ValueLabel } from './styled';
-
 function SummaryCard(props) {
   return (
-    <CardWrapper>
+    <div>
       <div>{props.headerLabel}</div>
       <hr />
-      <ValueLabel>{props.value}</ValueLabel>
-    </CardWrapper>
+      <span>{props.value}</span>
+    </div>
   );
 }
 

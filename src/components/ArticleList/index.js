@@ -4,7 +4,6 @@ import moment from 'moment';
 import formats from '../../constants/formats';
 import ArticleCard from '../ArticleCard';
 
-import { SerieWrapper, PostsWrapper } from './styled';
 import { mapSeriesBySeason, sortByLatest } from './helpers';
 
 function ArticleList({ posts, availableSeries }) {
@@ -20,7 +19,7 @@ function ArticleList({ posts, availableSeries }) {
     .sort(sortByLatest);
 
   return seriesBySeasons.map(({ serie, seasons }) => (
-    <SerieWrapper key={serie}>
+    <div key={serie}>
       {seasons.map(({ title, entries }) => (
         <section style={{ paddingBottom: '1rem' }} key={`season-${title}`}>
           <h2
@@ -34,7 +33,7 @@ function ArticleList({ posts, availableSeries }) {
             #{serie} | {title}
           </h2>
 
-          <PostsWrapper>
+          <div>
             {entries.map(
               ({
                 id,
@@ -53,10 +52,10 @@ function ArticleList({ posts, availableSeries }) {
                 />
               )
             )}
-          </PostsWrapper>
+          </div>
         </section>
       ))}
-    </SerieWrapper>
+    </div>
   ));
 }
 

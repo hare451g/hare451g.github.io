@@ -1,8 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import { Link } from './styled';
-
 function Footer() {
   const { site } = useStaticQuery(
     graphql`
@@ -19,9 +17,9 @@ function Footer() {
   );
   return (
     <p>
-      <Link href={site.siteMetadata.twitterURL}>twitter</Link> -{' '}
-      <Link href={site.siteMetadata.instagramURL}>instagram</Link> -{' '}
-      <Link href={site.siteMetadata.linkedInURL}>linkedIn</Link>
+      <a href={site.siteMetadata.twitterURL}>twitter</a> -{' '}
+      <a href={site.siteMetadata.instagramURL}>instagram</a> -{' '}
+      <a href={site.siteMetadata.linkedInURL}>linkedIn</a>
     </p>
   );
 }

@@ -1,8 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
-import { SeriesWrapper, SerieWrapper } from './styled';
-
 function SeriesList() {
   const data = useStaticQuery(
     graphql`
@@ -20,9 +18,9 @@ function SeriesList() {
   const { distinct: availableSeries } = data.allMarkdownRemark;
 
   return (
-    <SeriesWrapper>
+    <div>
       {availableSeries.map(serie => (
-        <SerieWrapper key={serie}>
+        <div key={serie}>
           <Link
             to={`/#${serie}`}
             style={{ textDecoration: 'none' }}
@@ -30,14 +28,9 @@ function SeriesList() {
           >
             {serie}
           </Link>
-        </SerieWrapper>
+        </div>
       ))}
-      <SerieWrapper>
-        <Link to={'/covid-19'} style={{ textDecoration: 'none' }}>
-          COVID-19
-        </Link>
-      </SerieWrapper>
-    </SeriesWrapper>
+    </div>
   );
 }
 

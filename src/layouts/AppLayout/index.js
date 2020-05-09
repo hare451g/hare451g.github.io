@@ -5,9 +5,6 @@ import moment from 'moment';
 
 import { lightTheme, darkTheme } from '../../constants/themes';
 
-import GlobalStyles from './GlobalStyles';
-import { AppLayoutWrapper } from './styled';
-
 function AppLayout({ children }) {
   const [theme, setTheme] = useState(lightTheme);
 
@@ -21,7 +18,7 @@ function AppLayout({ children }) {
   }, []);
 
   return (
-    <AppLayoutWrapper>
+    <>
       <Helmet>
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -34,11 +31,8 @@ function AppLayout({ children }) {
           lazyLoad
         ></link>
       </Helmet>
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        {children}
-      </ThemeProvider>
-    </AppLayoutWrapper>
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    </>
   );
 }
 

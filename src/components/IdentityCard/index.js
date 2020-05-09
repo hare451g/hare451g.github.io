@@ -1,14 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
-import {
-  IdentityCardWrapper,
-  AuthorThumbnailWrapper,
-  AuthorDescriptionWrapper,
-  AuthorName,
-  AuthorIntro,
-} from './styled';
-
 function IdentityCard() {
   const {
     site: { siteMetadata },
@@ -29,19 +21,19 @@ function IdentityCard() {
     `
   );
   return (
-    <IdentityCardWrapper>
+    <div>
       <Link to="/about">
-        <AuthorThumbnailWrapper>
+        <div>
           <img src={authorThumbnail.publicURL} alt={siteMetadata.author} />
-        </AuthorThumbnailWrapper>
+        </div>
       </Link>
-      <AuthorDescriptionWrapper>
+      <div>
         <Link to="/about">
-          <AuthorName>{siteMetadata.author}</AuthorName>
+          <span>{siteMetadata.author}</span>
         </Link>
-        <AuthorIntro>{siteMetadata.authorShortIntro}</AuthorIntro>
-      </AuthorDescriptionWrapper>
-    </IdentityCardWrapper>
+        <span>{siteMetadata.authorShortIntro}</span>
+      </div>
+    </div>
   );
 }
 
