@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import formats from '../../constants/formats';
+import formats from '../constants/formats';
 
 function WorkExperienceItem({ img, companyName, role, start, end, isPresent }) {
   return (

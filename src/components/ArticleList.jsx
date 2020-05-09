@@ -1,8 +1,8 @@
 import React from 'react';
 import moment from 'moment';
 
-import formats from '../../constants/formats';
-import ArticleCard from '../ArticleCard';
+import formats from '../constants/formats';
+import ArticleCard from './ArticleCard';
 
 function ArticleList({ entries = [] }) {
   return entries.map(

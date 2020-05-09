@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 // components
-import ArticleCard from '../../components/ArticleCard';
-import useRecentArticlesQuery from '../../hooks/useRecentArticlesQuery';
+import ArticleCard from '../components/ArticleCard';
+import useRecentArticlesQuery from '../hooks/useRecentArticlesQuery';
 
 function RecentArticles() {
   const recentArticles = useRecentArticlesQuery();

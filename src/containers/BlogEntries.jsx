@@ -1,8 +1,8 @@
 import React from 'react';
 
 // hooks
-import useAllBlogEntriesQuery from '../../hooks/useAllBlogEntriesQuery';
-import ArticlesBySeasons from '../../components/ArticlesBySeasons';
+import useAllBlogEntriesQuery from '../hooks/useAllBlogEntriesQuery';
+import ArticlesBySeasons from '../components/ArticlesBySeasons';
 
 function BlogEntries() {
   const { groupBySeason } = useAllBlogEntriesQuery();
