@@ -1,33 +1,19 @@
 import React from 'react';
-import moment from 'moment';
 import { graphql } from 'gatsby';
 
 import SEO from '../../components/SEO';
 import AppLayout from '../../layouts/AppLayout';
-import formats from '../../constants/formats';
 
 export default ({ data, pageContext }) => {
   const {
     markdownRemark: {
       html,
-      frontmatter: {
-        title,
-        description,
-        date,
-        heroImage,
-        series,
-        photographer,
-        unsplashAccount,
-      },
+      frontmatter: { title, description, heroImage },
     },
     site: {
       siteMetadata: { longDescription: siteDescription },
     },
   } = data;
-
-  const timeStamp = moment(date, formats.FRONT_MATTER_DATE).format(
-    formats.ARTICLE_TIMESTAMP
-  );
 
   return (
     <AppLayout>

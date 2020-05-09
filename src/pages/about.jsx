@@ -1,27 +1,14 @@
 import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { Link } from 'gatsby';
 
 import SEO from '../components/SEO';
 import HomeLayout from '../layouts/HomeLayout';
 import workExperiences from '../constants/workExperiences';
 import WorkExperienceItem from '../components/WorkExperienceItem';
+import useSiteMetadata from '../hooks/useSiteMetadata';
 
 function IndexPage() {
-  const {
-    site: { siteMetadata },
-  } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            email
-            author
-            description
-          }
-        }
-      }
-    `
-  );
+  const siteMetadata = useSiteMetadata();
 
   const email = siteMetadata.email;
   const subject = 'Business Inquiry';
