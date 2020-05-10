@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import moment from 'moment';
 
-import { lightTheme, darkTheme } from '../../constants/themes';
+import { lightTheme, darkTheme } from '../constants/themes';
 
 function AppLayout({ children }) {
   const [theme, setTheme] = useState(lightTheme);

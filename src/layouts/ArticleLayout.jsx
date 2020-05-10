@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import SEO from '../../components/SEO';
-import AppLayout from '../../layouts/AppLayout';
+import SEO from '../components/SEO';
+import AppLayout from './AppLayout';
 
 export default ({ data, pageContext }) => {
   const {
