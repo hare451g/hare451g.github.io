@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { ThemeProvider } from 'emotion-theming';
 import moment from 'moment';
 
 import { lightTheme, darkTheme } from '../constants/themes';
@@ -28,9 +29,9 @@ function AppLayout({ children }) {
           href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300&display=swap"
           rel="stylesheet"
           lazyLoad
-        ></link>
+        />
       </Helmet>
-      {children}
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </>
   );
 }
