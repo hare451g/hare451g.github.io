@@ -4,6 +4,7 @@ import { ThemeProvider } from 'emotion-theming';
 import moment from 'moment';
 
 import { lightTheme, darkTheme } from '../constants/themes';
+import GlobalStyle from '../components/GlobalStyles';
 
 function AppLayout({ children }) {
   const [theme, setTheme] = useState(lightTheme);
@@ -31,7 +32,10 @@ function AppLayout({ children }) {
           lazyLoad
         />
       </Helmet>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        {children}
+      </ThemeProvider>
     </>
   );
 }

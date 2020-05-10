@@ -5,7 +5,7 @@ import NavLink from './NavLink';
 
 function NavigationBar() {
   return (
-    <Flex color="text" alignItems="center" justifyContent="space-between">
+    <Flex p={2} color="text" alignItems="center" justifyContent="space-between">
       <Flex alignItems="center" justifyContent="space-between">
         <Text fontFamily="heading" fontSize="4" fontWeight="bold">
           Hendra Sadewa
