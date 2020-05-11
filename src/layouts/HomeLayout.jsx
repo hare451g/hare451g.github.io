@@ -12,10 +12,10 @@ function HomeLayout({ children }) {
       <main>
         <Flex
           width={['100%', '100%', 720]}
+          maxWidth={['100%', 600, 720]}
           alignItems="center"
           justifyContent="center"
           m="auto"
-          mt={5}
           flexDirection="column"
         >
           {children}
