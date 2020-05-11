@@ -53,7 +53,7 @@ function ArticleLayout({ data, pageContext }) {
           sx={{
             backgroundImage: `url(${heroImage})`,
             backgroundSize: 'cover',
-            height: [240, 320],
+            height: [240, 320, 420],
             width: '100%',
             boxShadow: 'medium',
             borderRadius: 8,
