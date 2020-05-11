@@ -1,13 +1,16 @@
 import React from 'react';
-import { Flex, Text } from 'rebass';
+import { Flex, Text, Image } from 'rebass';
 
 import NavLink from './NavLink';
+import useSiteLogo from '../hooks/useSiteLogo';
 
 function NavigationBar() {
+  const siteLogo = useSiteLogo();
   return (
-    <Flex p={2} color="text" alignItems="center" justifyContent="space-between">
+    <Flex variant="navbar">
       <Flex alignItems="center" justifyContent="space-between">
-        <Text fontFamily="heading" fontSize="4" fontWeight="bold">
+        <Image src={siteLogo} height={32} width={32} />
+        <Text fontFamily="heading" fontSize={2} fontWeight="bold" pl={2}>
           Hendra Sadewa
         </Text>
       </Flex>
