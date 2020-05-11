@@ -22,7 +22,15 @@ function mapSeriesBySeason(series) {
           node.frontmatter.seasonTitle !== null &&
           node.frontmatter.seasonTitle === season
       )
-      .map(({ node }) => ({ ...node })),
+      .map(
+        ({
+          node: {
+            id,
+            frontmatter: { date, title, description, heroImage },
+            fields: { slug },
+          },
+        }) => ({ id, date, title, description, heroImage, slug })
+      ),
   }));
 
   return {

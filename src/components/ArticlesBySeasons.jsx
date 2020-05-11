@@ -1,27 +1,27 @@
 import React from 'react';
+import { Box, Flex, Text } from 'rebass';
 
-import ArticleList from './ArticleList';
+// components
+import ArticleSeriesTab from './ArticleSeriesTab';
 
 function ArticlesBySeasons({ seriesBySeasons = [] }) {
   return seriesBySeasons.map(({ serie, seasons }) => (
-    <div key={serie}>
-      {seasons.map(({ title, entries }) => (
-        <section style={{ paddingBottom: '1rem' }} key={`season-${title}`}>
-          <h2
-            style={{
-              textAlign: 'center',
-              fontFamily: `${props => props.theme.fonts.monospace};`,
-            }}
-            id={serie}
-          >
-            {' '}
-            #{serie} | {title}
-          </h2>
-
-          <ArticleList entries={entries} />
-        </section>
-      ))}
-    </div>
+    <Flex width={['100%', '100%', 720]} m="auto" flexDirection="column">
+      <Text
+        fontFamily="heading"
+        fontSize={[4, 5, 6]}
+        textAlign="center"
+        px={[1, 1, 5]}
+        py={4}
+        fontWeight="heading"
+        sx={{ textTransform: 'uppercase' }}
+      >
+        {serie}
+      </Text>
+      <Box>
+        <ArticleSeriesTab serie={serie} seasons={seasons} />
+      </Box>
+    </Flex>
   ));
 }
 

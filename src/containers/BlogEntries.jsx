@@ -9,7 +9,6 @@ function BlogEntries() {
   const seriesBySeasons = groupBySeason();
   return (
     <div>
-      <h1>Blog Posts</h1>
       <ArticlesBySeasons seriesBySeasons={seriesBySeasons} />
     </div>
   );

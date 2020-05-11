@@ -45,7 +45,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/hareblog-icon.svg`,
+        icon: `src/images/Logo.svg`,
       },
     },
     {

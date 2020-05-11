@@ -6,7 +6,7 @@ function useSiteLogo() {
   } = useStaticQuery(
     graphql`
       query {
-        siteLogo: file(relativePath: { eq: "hareblog-icon.svg" }) {
+        siteLogo: file(relativePath: { eq: "Logo.svg" }) {
           publicURL
         }
       }

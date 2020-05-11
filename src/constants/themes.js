@@ -7,7 +7,7 @@ const theme = {
     background: '#fdfdfd',
     cardBackground: '#e5e9f0',
     border: '#eee',
-    text: '#111815',
+    text: '#2E4052',
     link: '#8ac3a6',
     blue: '#07c',
     lightgray: '#f6f6ff',
@@ -39,6 +39,10 @@ const theme = {
       justifyContent: 'space-between',
       py: 3,
       px: 2,
+    },
+    activeTab: {
+      fontWeight: 'bold',
+      borderBottom: '4px solid #adf4cf',
     },
     articleCard: {
       borderLeft: '4px solid #adf4cf',

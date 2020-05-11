@@ -26,15 +26,15 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
               fontFamily="heading"
               color="text"
               fontWeight="heading"
-              fontSize={3}
+              fontSize={[1, 2, 3]}
             >
               {title}
             </Text>
-            <Text fontFamily="body" color="text" py={1}>
+            <Text fontFamily="body" color="text" py={3} fontSize={[1, 2, 3]}>
               {description}
             </Text>
           </Flex>
-          <Text fontFamily="body" color="text">
+          <Text fontFamily="body" color="text" fontSize={[1, 2, 3]}>
             {datePublished}
           </Text>
         </Flex>
