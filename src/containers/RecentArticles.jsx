@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { Text, Box } from 'rebass';
 
 // components
 import ArticleCard from '../components/ArticleCard';
+
+// hooks
 import useRecentArticlesQuery from '../hooks/useRecentArticlesQuery';
-import { Text } from 'rebass';
 
 function RecentArticles() {
   const recentArticles = useRecentArticlesQuery();
@@ -13,16 +15,14 @@ function RecentArticles() {
   const list = recentArticles.map(article => <ArticleCard {...article} />);
 
   return (
-    <div>
-      <Text>Artikel Terbaru</Text>
+    <Box m={2}>
+      <Box>
+        <Text fontWeight="heading" fontFamily="heading" fontSize={5} pb={3}>
+          Artikel Terbaru
+        </Text>
+      </Box>
       {list}
-      <Link to="/blog">
-        <span role="img" aria-label="pointing to see more ">
-          👉
-        </span>{' '}
-        Click here to see more.
-      </Link>
-    </div>
+    </Box>
   );
 }
 
