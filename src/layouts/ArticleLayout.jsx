@@ -30,7 +30,7 @@ function ArticleLayout({ data, pageContext }) {
         pathname={pageContext.slug}
         image={heroImage}
       />
-      <Flex width="inherit" flexDirection="column">
+      <Flex width="inherit" flexDirection="column" px={[3, 2, 3]}>
         <Heading fontSize={5} textAlign="center" pt={[1, 2, 4]} pb={2}>
           {title}
         </Heading>
