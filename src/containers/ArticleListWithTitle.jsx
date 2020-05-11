@@ -5,25 +5,20 @@ import { Text, Box } from 'rebass';
 // components
 import ArticleCard from '../components/ArticleCard';
 
-// hooks
-import useRecentArticlesQuery from '../hooks/useRecentArticlesQuery';
-
-function RecentArticles() {
-  const recentArticles = useRecentArticlesQuery();
-
+function ArticleListWithTitle({ title, list }) {
   // render list of recent articles
-  const list = recentArticles.map(article => <ArticleCard {...article} />);
+  const articles = list.map(article => <ArticleCard {...article} />);
 
   return (
     <Box m={2}>
       <Box>
         <Text fontWeight="heading" fontFamily="heading" fontSize={5} pb={3}>
-          Artikel Terbaru
+          {title}
         </Text>
       </Box>
-      {list}
+      {articles}
     </Box>
   );
 }
 
-export default RecentArticles;
+export default ArticleListWithTitle;

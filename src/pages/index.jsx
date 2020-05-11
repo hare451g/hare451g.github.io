@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 import NavigationBar from '../components/NavigationBar';
 
 // containers
-import RecentArticles from '../containers/RecentArticles';
+import ArticleListWithTitle from '../containers/ArticleListWithTitle';
 
 // layouts
 import AppLayout from '../layouts/AppLayout';
@@ -14,10 +14,12 @@ import AppLayout from '../layouts/AppLayout';
 // hooks
 import useSiteMetadata from '../hooks/useSiteMetadata';
 import useSiteLogo from '../hooks/useSiteLogo';
+import useRecentArticlesQuery from '../hooks/useRecentArticlesQuery';
 
-function IndexPage(props) {
+function IndexPage() {
   const { description, longDescription } = useSiteMetadata();
   const siteLogo = useSiteLogo();
+  const recentArticles = useRecentArticlesQuery();
 
   return (
     <AppLayout>
@@ -35,7 +37,7 @@ function IndexPage(props) {
           m="auto"
           mt={5}
         >
-          <RecentArticles />
+          <ArticleListWithTitle title="Recent Articles" list={recentArticles} />
         </Flex>
       </main>
     </AppLayout>
