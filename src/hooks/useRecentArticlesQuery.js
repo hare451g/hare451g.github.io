@@ -26,6 +26,7 @@ function useRecentArticlesQuery() {
                 seasonTitle
                 series
                 title
+                date
               }
             }
           }
