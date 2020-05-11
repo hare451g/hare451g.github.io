@@ -2,6 +2,7 @@ import React from 'react';
 
 // components
 import SEO from '../components/SEO';
+import ArticlesBySeasons from '../components/ArticlesBySeasons';
 
 // layout
 import HomeLayout from '../layouts/HomeLayout';
@@ -9,11 +10,13 @@ import HomeLayout from '../layouts/HomeLayout';
 // hooks
 import useSiteMetadata from '../hooks/useSiteMetadata';
 import useSiteLogo from '../hooks/useSiteLogo';
-import BlogEntries from '../containers/BlogEntries';
+import useAllBlogEntriesQuery from '../hooks/useAllBlogEntriesQuery';
 
 function BlogPage() {
   const { description, longDescription } = useSiteMetadata();
   const siteLogo = useSiteLogo();
+  const { groupBySeason } = useAllBlogEntriesQuery();
+  const seriesBySeasons = groupBySeason();
 
   return (
     <HomeLayout>
@@ -22,7 +25,7 @@ function BlogPage() {
         description={`${description} | ${longDescription}`}
         image={siteLogo.publicURL}
       />
-      <BlogEntries />
+      <ArticlesBySeasons seriesBySeasons={seriesBySeasons} />;
     </HomeLayout>
   );
 }

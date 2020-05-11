@@ -34,9 +34,6 @@ const theme = {
   variants: {
     navbar: {
       borderBottom: '1px solid #eee',
-      color: 'text',
-      alignItems: 'center',
-      justifyContent: 'space-between',
       py: 3,
       px: 2,
     },

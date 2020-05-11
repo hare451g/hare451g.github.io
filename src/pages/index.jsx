@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 import NavigationBar from '../components/NavigationBar';
 
 // containers
-import ArticleListWithTitle from '../containers/ArticleListWithTitle';
+import ArticleListWithTitle from '../components/ArticleListWithTitle';
 
 // layouts
 import AppLayout from '../layouts/AppLayout';
@@ -29,17 +29,15 @@ function IndexPage() {
         image={siteLogo.publicURL}
       />
       <NavigationBar />
-      <main>
-        <Flex
-          width={[380, 720]}
-          alignItems="center"
-          justifyContent="center"
-          m="auto"
-          mt={5}
-        >
-          <ArticleListWithTitle title="Recent Articles" list={recentArticles} />
-        </Flex>
-      </main>
+      <Flex
+        width={['100%', '100%', 720]}
+        alignItems="center"
+        justifyContent="center"
+        m="auto"
+        mt={5}
+      >
+        <ArticleListWithTitle title="Recent Articles" list={recentArticles} />
+      </Flex>
     </AppLayout>
   );
 }

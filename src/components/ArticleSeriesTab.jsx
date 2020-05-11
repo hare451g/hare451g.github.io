@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Text, Box, Flex } from 'rebass';
 
-import ArticleListWithTitle from '../containers/ArticleListWithTitle';
+import ArticleListWithTitle from './ArticleListWithTitle';
 
 // components
 import TabItem from './TabItem';

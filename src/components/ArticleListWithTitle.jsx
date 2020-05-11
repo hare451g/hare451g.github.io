@@ -3,14 +3,14 @@ import { Link } from 'gatsby';
 import { Text, Box } from 'rebass';
 
 // components
-import ArticleCard from '../components/ArticleCard';
+import ArticleCard from './ArticleCard';
 
 function ArticleListWithTitle({ title, list }) {
   // render list of recent articles
   const articles = list.map(article => <ArticleCard {...article} />);
 
   return (
-    <Box m={2}>
+    <Box px={2}>
       <Box>
         <Text fontWeight="heading" fontFamily="heading" fontSize={5} pb={3}>
           {title}
