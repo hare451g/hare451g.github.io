@@ -1,23 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'emotion-theming';
-import moment from 'moment';
 
-import { lightTheme, darkTheme } from '../constants/themes';
+import theme from '../constants/themes';
 import GlobalStyle from '../components/GlobalStyles';
 
 function AppLayout({ children }) {
-  const [theme, setTheme] = useState(lightTheme);
-
-  useEffect(() => {
-    // check if night
-    const isNight = moment().hour() >= 18 || moment().hour() <= 4;
-
-    if (isNight) {
-      setTheme(darkTheme);
-    }
-  }, []);
-
   return (
     <>
       <Helmet>
