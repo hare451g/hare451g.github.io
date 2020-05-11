@@ -1,11 +1,9 @@
 import React from 'react';
-import { Flex, Text, Image, Box } from 'rebass';
+import { Flex, Text, Box, Heading } from 'rebass';
 
 import NavLink from './NavLink';
-import useSiteLogo from '../hooks/useSiteLogo';
 
 function NavigationBar() {
-  const siteLogo = useSiteLogo();
   return (
     <Box variant="navbar">
       <Flex
@@ -17,13 +15,10 @@ function NavigationBar() {
       >
         <Flex alignItems="center" justifyContent="space-between">
           <NavLink to="/">
-            <Image src={siteLogo} height={32} width={32} alt="site logo" />
-          </NavLink>
-          <NavLink to="/">
             <Box>
-              <Text fontFamily="heading" fontSize={2}>
+              <Heading fontFamily="heading" fontSize={2}>
                 Hendra Sadewa
-              </Text>
+              </Heading>
             </Box>
           </NavLink>
         </Flex>

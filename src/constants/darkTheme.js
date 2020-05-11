@@ -1,16 +1,10 @@
-const theme = {
+const darkTheme = {
   breakpoints: ['40em', '52em', '64em'],
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   colors: {
-    white: '#fDfDfD',
     brand: '#adf4cf',
-    background: '#fdfdfd',
-    cardBackground: '#e5e9f0',
-    border: '#eee',
-    text: '#2E4052',
-    link: '#8ac3a6',
-    blue: '#07c',
-    lightgray: '#f6f6ff',
+    background: '#1c1c1e',
+    text: '#fdfdfd',
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
@@ -39,7 +33,7 @@ const theme = {
   },
   variants: {
     navbar: {
-      borderBottom: '1px solid #eee',
+      borderBottom: '1px solid #fdfdfd',
       py: 3,
       px: 2,
     },
@@ -62,4 +56,4 @@ const theme = {
   },
 };
 
-export default theme;
+export default darkTheme;
