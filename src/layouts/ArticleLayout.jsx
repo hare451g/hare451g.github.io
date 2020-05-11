@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import SEO from '../components/SEO';
-import AppLayout from './AppLayout';
+import HomeLayout from './HomeLayout';
 
-export default ({ data, pageContext }) => {
+function ArticleLayout({ data, pageContext }) {
   const {
     markdownRemark: {
       html,
@@ -16,7 +16,7 @@ export default ({ data, pageContext }) => {
   } = data;
 
   return (
-    <AppLayout>
+    <HomeLayout>
       <SEO
         title={`${title}`}
         description={`${description} | ${siteDescription}`}
@@ -26,9 +26,9 @@ export default ({ data, pageContext }) => {
       <main>
         <article dangerouslySetInnerHTML={{ __html: html }}></article>
       </main>
-    </AppLayout>
+    </HomeLayout>
   );
-};
+}
 
 export const query = graphql`
   query($slug: String!) {
@@ -51,3 +51,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default ArticleLayout;

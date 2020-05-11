@@ -3,13 +3,10 @@ import { Flex } from 'rebass';
 
 // components
 import SEO from '../components/SEO';
-import NavigationBar from '../components/NavigationBar';
-
-// containers
 import ArticleListWithTitle from '../components/ArticleListWithTitle';
 
 // layouts
-import AppLayout from '../layouts/AppLayout';
+import HomeLayout from '../layouts/HomeLayout';
 
 // hooks
 import useSiteMetadata from '../hooks/useSiteMetadata';
@@ -22,23 +19,14 @@ function IndexPage() {
   const recentArticles = useRecentArticlesQuery();
 
   return (
-    <AppLayout>
+    <HomeLayout>
       <SEO
         title="Home"
         description={`${description} | ${longDescription}`}
         image={siteLogo.publicURL}
       />
-      <NavigationBar />
-      <Flex
-        width={['100%', '100%', 720]}
-        alignItems="center"
-        justifyContent="center"
-        m="auto"
-        mt={5}
-      >
-        <ArticleListWithTitle title="Recent Articles" list={recentArticles} />
-      </Flex>
-    </AppLayout>
+      <ArticleListWithTitle title="Recent Articles" list={recentArticles} />
+    </HomeLayout>
   );
 }
 

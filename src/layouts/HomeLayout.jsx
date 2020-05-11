@@ -1,4 +1,5 @@
 import React from 'react';
+import { Flex } from 'rebass';
 import AppLayout from './AppLayout';
 import NavigationBar from '../components/NavigationBar';
 
@@ -8,7 +9,18 @@ function HomeLayout({ children }) {
       <header>
         <NavigationBar />
       </header>
-      <main>{children}</main>
+      <main>
+        <Flex
+          width={['100%', '100%', 720]}
+          alignItems="center"
+          justifyContent="center"
+          m="auto"
+          mt={5}
+          flexDirection="column"
+        >
+          {children}
+        </Flex>
+      </main>
     </AppLayout>
   );
 }
