@@ -7,7 +7,13 @@ function TabItem({ list, index, selectedTab, onTabClick }) {
       key={`${selectedTab}-${item[index]}`}
       variant={item[index] === selectedTab && 'activeTab'}
     >
-      <Text onClick={() => onTabClick(item[index])} fontFamily="heading">
+      <Text
+        onClick={() => onTabClick(item[index])}
+        fontFamily="heading"
+        sx={{
+          cursor: 'pointer',
+        }}
+      >
         {item[index]}
       </Text>
     </Box>

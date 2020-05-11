@@ -18,7 +18,7 @@ function ArticlesBySeasons({ seriesBySeasons = [] }) {
       >
         {serie}
       </Text>
-      <Box>
+      <Box mb={5}>
         <ArticleSeriesTab serie={serie} seasons={seasons} />
       </Box>
     </Flex>

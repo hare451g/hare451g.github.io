@@ -13,7 +13,7 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
     <Link to={slug} style={{ textDecoration: 'none' }} key={id}>
       <Flex
         flexDirection="row"
-        mb={3}
+        mb={4}
         variant="articleCard"
         justifyContent="space-between"
       >
@@ -33,11 +33,11 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
             >
               {title}
             </Text>
-            <Text fontFamily="body" color="text" py={3} fontSize={[1, 2, 3]}>
+            <Text fontFamily="body" color="text" py={3} fontSize={[1, 2, 2]}>
               {description}
             </Text>
           </Flex>
-          <Text fontFamily="body" color="text" fontSize={[1, 2, 3]}>
+          <Text fontFamily="monospace" color="text" fontSize={[1, 2, 1]}>
             {datePublished}
           </Text>
         </Flex>

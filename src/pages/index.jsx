@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex } from 'rebass';
+import { Flex, Heading, Text, Box } from 'rebass';
 
 // components
 import SEO from '../components/SEO';
@@ -25,7 +25,19 @@ function IndexPage() {
         description={`${description} | ${longDescription}`}
         image={siteLogo.publicURL}
       />
-      <ArticleListWithTitle title="Recent Articles" list={recentArticles} />
+      <Flex flexDirection="column" mt={4}>
+        <Box p={2} mb={3}>
+          <Heading mb={2}>Hi! I'm Hendra</Heading>
+          <Text fontFamily="body" fontSize={2} lineHeight={1.5}>
+            Software engineer specialized in JavaScript (ES6/Node.Js) and
+            React. I have great passion in functional programming, and web
+            development. Currently working fulltime as Front-end Developer at
+            Hara, but I do some freelance jobs and writing about tech too.
+          </Text>
+        </Box>
+
+        <ArticleListWithTitle title="Recent Articles" list={recentArticles} />
+      </Flex>
     </HomeLayout>
   );
 }

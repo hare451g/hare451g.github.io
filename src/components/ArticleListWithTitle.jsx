@@ -12,7 +12,7 @@ function ArticleListWithTitle({ title, list }) {
   return (
     <Box px={2}>
       <Box>
-        <Text fontWeight="heading" fontFamily="heading" fontSize={5} pb={3}>
+        <Text fontWeight="heading" fontFamily="heading" fontSize={4} pb={3}>
           {title}
         </Text>
       </Box>
