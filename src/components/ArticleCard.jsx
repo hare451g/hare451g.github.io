@@ -3,8 +3,11 @@ import { Link } from 'gatsby';
 import { Box, Flex, Text } from 'rebass';
 import moment from 'moment';
 
+// constants
+import formats from '../constants/formats';
+
 function ArticleCard({ id, slug, heroImage, title, date, description }) {
-  const datePublished = moment(date).format('dddd, D-MMMM-YYYY');
+  const datePublished = moment(date).format(formats.ARTICLE_TIMESTAMP);
 
   return (
     <Link to={slug} style={{ textDecoration: 'none' }} key={id}>

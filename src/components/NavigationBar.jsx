@@ -20,7 +20,7 @@ function NavigationBar() {
             <Image src={siteLogo} height={32} width={32} alt="site logo" />
           </NavLink>
           <NavLink to="/">
-            <Box variant="activeTab">
+            <Box>
               <Text fontFamily="heading" fontSize={2}>
                 Hendra Sadewa
               </Text>
