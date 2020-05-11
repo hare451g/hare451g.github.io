@@ -1,4 +1,5 @@
 import React from 'react';
+import { Flex } from 'rebass';
 
 // components
 import SEO from '../components/SEO';
@@ -25,11 +26,17 @@ function IndexPage(props) {
         description={`${description} | ${longDescription}`}
         image={siteLogo.publicURL}
       />
-      <header>
-        <NavigationBar />
-      </header>
+      <NavigationBar />
       <main>
-        <RecentArticles />
+        <Flex
+          width={[380, 720]}
+          alignItems="center"
+          justifyContent="center"
+          m="auto"
+          mt={5}
+        >
+          <RecentArticles />
+        </Flex>
       </main>
     </AppLayout>
   );

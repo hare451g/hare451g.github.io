@@ -8,17 +8,15 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
 
   return (
     <Link to={slug} style={{ textDecoration: 'none' }} key={id}>
-      <Flex flexDirection="row" mb={3}>
-        <Box
-          sx={{
-            backgroundImage: `url(${heroImage})`,
-            backgroundSize: 'cover',
-            minHeight: [120],
-            minWidth: [120],
-          }}
-        />
+      <Flex
+        flexDirection="row"
+        mb={3}
+        variant="articleCard"
+        justifyContent="space-between"
+      >
         <Flex
           flexDirection="column"
+          py={1}
           px={2}
           justifyContent="space-between"
           alignItems="flex-start"
@@ -40,6 +38,14 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
             {datePublished}
           </Text>
         </Flex>
+        <Box
+          sx={{
+            backgroundImage: `url(${heroImage})`,
+            backgroundSize: 'cover',
+            minHeight: [120],
+            minWidth: [120],
+          }}
+        />
       </Flex>
     </Link>
   );

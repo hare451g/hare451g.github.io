@@ -7,7 +7,7 @@ function useRecentArticlesQuery() {
     graphql`
       query {
         allMarkdownRemark(
-          limit: 3
+          limit: 5
           sort: { fields: frontmatter___date, order: DESC }
           filter: {
             frontmatter: { isPublished: { eq: true } }

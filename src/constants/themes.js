@@ -40,6 +40,11 @@ const theme = {
       py: 3,
       px: 2,
     },
+    articleCard: {
+      borderLeft: '4px solid #adf4cf',
+      backgroundColor: '#fdfdfd',
+      boxShadow: '0 0 4px rgba(0, 0, 0, .125)',
+    },
   },
   text: {},
   buttons: {

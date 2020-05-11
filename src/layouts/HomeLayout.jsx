@@ -9,9 +9,6 @@ function HomeLayout({ children }) {
         <NavigationBar />
       </header>
       <main>{children}</main>
-      <footer>
-        <hr />
-      </footer>
     </AppLayout>
   );
 }
