@@ -6,7 +6,7 @@ const theme = {
     brand: '#adf4cf',
     background: '#fdfdfd',
     cardBackground: '#e5e9f0',
-    border: '#34493e',
+    border: '#eee',
     text: '#111815',
     link: '#8ac3a6',
     blue: '#07c',
@@ -31,7 +31,16 @@ const theme = {
     small: '0 0 4px rgba(0, 0, 0, .125)',
     large: '0 0 24px rgba(0, 0, 0, .125)',
   },
-  variants: {},
+  variants: {
+    navbar: {
+      borderBottom: '1px solid #eee',
+      color: 'text',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      py: 3,
+      px: 2,
+    },
+  },
   text: {},
   buttons: {
     primary: {
