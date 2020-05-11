@@ -1,7 +1,9 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
 function useSiteLogo() {
-  const { siteLogo } = useStaticQuery(
+  const {
+    siteLogo: { publicURL },
+  } = useStaticQuery(
     graphql`
       query {
         siteLogo: file(relativePath: { eq: "hareblog-icon.svg" }) {
@@ -11,7 +13,7 @@ function useSiteLogo() {
     `
   );
 
-  return siteLogo;
+  return publicURL;
 }
 
 export default useSiteLogo;
