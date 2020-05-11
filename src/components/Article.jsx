@@ -10,6 +10,7 @@ const Article = styled.article`
 
   p {
     margin-bottom: ${props => props.theme.space[2]}px;
+    color: ${props => props.theme.colors.text};
   }
 
   h1,
@@ -26,12 +27,19 @@ const Article = styled.article`
     color: ${props => props.theme.colors.text};
   }
 
+  * > img {
+    border-radius: 8px;
+    box-shadow: ${props => props.theme.shadows.large};
+    width: 100%;
+  }
+
   pre {
     overflow-x: auto;
     cursor: text;
     color: rgb(238, 238, 238);
     border-radius: 0.85rem;
     padding: 1rem;
+    box-shadow: ${props => props.theme.shadows.large};
   }
 `;
 

@@ -16,6 +16,9 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
         mb={4}
         variant="articleCard"
         justifyContent="space-between"
+        sx={{
+          boxShadow: 'small',
+        }}
       >
         <Flex
           flexDirection="column"

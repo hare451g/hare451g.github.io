@@ -55,6 +55,8 @@ function ArticleLayout({ data, pageContext }) {
             backgroundSize: 'cover',
             height: [240, 320],
             width: '100%',
+            boxShadow: 'medium',
+            borderRadius: 8,
           }}
           alt={title}
         />
