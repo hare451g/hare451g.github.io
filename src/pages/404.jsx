@@ -1,5 +1,8 @@
 import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Text, Image, Heading } from 'rebass';
+
+import NavLink from '../components/NavLink';
 import SEO from '../components/SEO';
 
 import HomeLayout from '../layouts/HomeLayout';
@@ -18,20 +21,23 @@ function NotFoundPage() {
     <HomeLayout>
       <SEO title="404 Page Not Found" />
 
-      <img
-        width="100%"
-        height="320"
+      <Heading fontSize={[2, 2, 6]} my={4}>
+        404! Not Found.
+      </Heading>
+
+      <Image
+        height={[200, 320, 320]}
         src={notFoundImage.publicURL}
         alt="Not Found"
-        style={{ marginTop: '2rem' }}
+        my={4}
       />
 
-      <p style={{ textAlign: 'center' }}>
+      <Text textAlign="center" fontFamily="body" mt={4} mb={2} fontSize={4}>
         Page that you requested is doesn't exists . . . (yet ?)
-      </p>
-      <p style={{ textAlign: 'center' }}>
-        <Link to="/">click here, I'll take you to home.</Link>
-      </p>
+      </Text>
+      <Text textAlign="center" fontFamily="Heading">
+        <NavLink to="/">click here, I'll take you to home.</NavLink>
+      </Text>
     </HomeLayout>
   );
 }
