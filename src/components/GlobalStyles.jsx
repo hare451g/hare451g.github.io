@@ -13,8 +13,6 @@ const makeGlobalStyles = theme => css`
   p,
   ul,
   li,
-  span,
-  div,
   h1,
   h2,
   h3,
