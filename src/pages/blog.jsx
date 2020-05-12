@@ -25,7 +25,7 @@ function BlogPage() {
         description={`${description} | ${longDescription}`}
         image={siteLogo.publicURL}
       />
-      <ArticlesBySeasons seriesBySeasons={seriesBySeasons} />;
+      <ArticlesBySeasons seriesBySeasons={seriesBySeasons} />
     </HomeLayout>
   );
 }
