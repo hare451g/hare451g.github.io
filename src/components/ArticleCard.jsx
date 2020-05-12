@@ -18,7 +18,8 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
         justifyContent="space-between"
         bg="background"
         sx={{
-          boxShadow: 'small',
+          borderRadius: 8,
+          boxShadow: 'medium',
         }}
       >
         <Flex
@@ -28,7 +29,7 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
           justifyContent="space-between"
           alignItems="flex-start"
         >
-          <Flex flexDirection="column">
+          <Flex flexDirection="column" py={2}>
             <Text
               fontFamily="heading"
               color="text"
@@ -49,8 +50,10 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
           sx={{
             backgroundImage: `url(${heroImage})`,
             backgroundSize: 'cover',
-            minHeight: [120],
-            minWidth: [120],
+            borderTopRightRadius: 8,
+            borderBottomRightRadius: 8,
+            minHeight: [120, 180],
+            minWidth: [120, 240],
           }}
         />
       </Flex>
