@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Text, Box, Heading } from 'rebass';
+import { Flex, Box, Heading } from 'rebass';
 
 import NavLink from './NavLink';
 
@@ -7,7 +7,6 @@ function NavigationBar() {
   return (
     <Box
       variant="navbar"
-      bg="background"
       sx={{
         boxShadow: 'small',
         position: 'fixed',

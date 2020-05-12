@@ -3,7 +3,7 @@ const lightTheme = {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   colors: {
     brand: '#adf4cf',
-    background: '#fdfdfd',
+    background: '#fbfbfb',
     text: '#1c1c1e',
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256],
@@ -33,6 +33,7 @@ const lightTheme = {
   },
   variants: {
     navbar: {
+      backgroundColor: '#fdfdfd',
       borderBottom: '1px solid #eee',
       py: 2,
       px: 2,
