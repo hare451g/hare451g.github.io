@@ -5,7 +5,16 @@ import NavLink from './NavLink';
 
 function NavigationBar() {
   return (
-    <Box variant="navbar">
+    <Box
+      variant="navbar"
+      bg="background"
+      sx={{
+        boxShadow: 'small',
+        position: 'fixed',
+        top: 0,
+        width: '100%',
+      }}
+    >
       <Flex
         color="text"
         alignItems="center"

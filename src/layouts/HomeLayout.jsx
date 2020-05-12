@@ -14,6 +14,7 @@ function HomeLayout({ children }) {
           width={['100%', '100%', 720]}
           maxWidth={['100%', 600, 720]}
           m="auto"
+          mt={5}
           flexDirection="column"
         >
           {children}
