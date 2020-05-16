@@ -2,19 +2,12 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Box, Flex, Text } from 'rebass';
 import moment from 'moment';
+import { GrCalendar } from 'react-icons/gr';
 
 // constants
 import formats from '../constants/formats';
 
-function ArticleCard({
-  id,
-  slug,
-  heroImage,
-  title,
-  date,
-  description,
-  episode,
-}) {
+function ArticleCard({ id, slug, heroImage, title, date, description }) {
   const datePublished = moment(date).format(formats.ARTICLE_TIMESTAMP);
 
   return (
@@ -51,7 +44,7 @@ function ArticleCard({
             </Text>
           </Flex>
           <Text fontFamily="monospace" color="text" fontSize={[1, 2, 1]}>
-            {datePublished}
+            <GrCalendar /> {datePublished}
           </Text>
         </Flex>
         <Box

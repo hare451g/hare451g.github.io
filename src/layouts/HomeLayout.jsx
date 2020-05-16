@@ -2,6 +2,7 @@ import React from 'react';
 import { Flex } from 'rebass';
 import AppLayout from './AppLayout';
 import NavigationBar from '../components/NavigationBar';
+import Footer from '../components/Footer';
 
 function HomeLayout({ children }) {
   return (
@@ -20,6 +21,7 @@ function HomeLayout({ children }) {
           {children}
         </Flex>
       </main>
+      <Footer />
     </AppLayout>
   );
 }

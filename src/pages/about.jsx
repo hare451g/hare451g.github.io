@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Heading, Box, Link as RLink } from 'rebass';
+import { Text, Heading, Box } from 'rebass';
 // components
 import SEO from '../components/SEO';
 import WorkExperienceItem from '../components/WorkExperienceItem';
@@ -36,38 +36,6 @@ function IndexPage() {
     </Box>
   ));
 
-  const socialMediaList = [
-    {
-      type: 'Twitter',
-      name: siteMetadata.twitter,
-      url: siteMetadata.linkedInURL,
-    },
-    {
-      type: 'Instagram',
-      name: siteMetadata.instagram,
-      url: siteMetadata.twitterURL,
-    },
-    {
-      type: 'LinkedIn',
-      name: siteMetadata.linkedIn,
-      url: siteMetadata.instagramURL,
-    },
-  ].map(socmed => (
-    <Text fontSize={2} fontFamily="body" py={2} lineHeight={1.5}>
-      {socmed.type}:{' '}
-      <RLink
-        href={socmed.url}
-        variant="nav"
-        sx={{
-          textDecorationColor: 'brand',
-          color: 'text',
-        }}
-      >
-        {socmed.name}
-      </RLink>
-    </Text>
-  ));
-
   return (
     <HomeLayout>
       <SEO
@@ -91,7 +59,7 @@ function IndexPage() {
             mainly using React JS and modern javascript to deliver
             business-driven web or web-applications with solid, tested, and
             scalable architecture design. I get used to coding with clean,
-            error-safe, and testable code, with a #FunctionalProgramming
+            error-safe, and testable code, with a Functional Programming
             paradigm.
           </Text>
           <Text fontFamily="body" fontSize={2} lineHeight={1.5} mb={3}>
@@ -118,13 +86,6 @@ function IndexPage() {
             Professional Skills
           </Heading>
           {professionalSkillList}
-        </Box>
-
-        <Box width="inherit" pt={4} mb={4}>
-          <Heading mb={3} pb={2} sx={{ borderBottom: '1px solid #333' }}>
-            Connect With Me!
-          </Heading>
-          {socialMediaList}
         </Box>
       </Box>
     </HomeLayout>

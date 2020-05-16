@@ -38,6 +38,12 @@ const lightTheme = {
       py: 2,
       px: 2,
     },
+    footer: {
+      backgroundColor: '#fdfdfd',
+      borderTop: '1px solid #eee',
+      py: 2,
+      px: 2,
+    },
     activeTab: {
       fontWeight: 'bold',
       borderBottom: '4px solid #adf4cf',
@@ -47,6 +53,7 @@ const lightTheme = {
       textDecoration: 'none',
       fontWeight: 'bold',
       borderBottom: '4px solid #adf4cf',
+      fontFamily: "'Inter', sans-serif",
     },
     articleCard: {
       borderLeft: '4px solid #adf4cf',
