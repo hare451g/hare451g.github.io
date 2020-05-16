@@ -1,35 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment';
-import Cookie from 'js-cookie';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'emotion-theming';
 
 import lightTheme from '../constants/lightTheme';
-import darkTheme from '../constants/darkTheme';
 import GlobalStyle from '../components/GlobalStyles';
 
 function AppLayout({ children }) {
-  const themes = {
-    light: lightTheme,
-    dark: darkTheme,
-  };
-
-  // get theme from cookie
-  const [theme, setTheme] = useState(themes[Cookie.get('theme')] || lightTheme);
-
-  useEffect(() => {
-    // check if night
-    const isNight = moment().hour() >= 18 || moment().hour() <= 6;
-
-    if (isNight) {
-      setTheme(themes['dark']);
-      Cookie.set('theme', 'dark');
-    } else {
-      setTheme(themes['light']);
-      Cookie.set('theme', 'light');
-    }
-  }, []);
-
   return (
     <>
       <Helmet>
@@ -44,7 +20,7 @@ function AppLayout({ children }) {
           lazyLoad
         />
       </Helmet>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={lightTheme}>
         <GlobalStyle />
         {children}
       </ThemeProvider>
