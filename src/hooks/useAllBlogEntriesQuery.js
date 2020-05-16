@@ -21,11 +21,10 @@ function useAllBlogEntriesQuery() {
               id
               excerpt
               frontmatter {
-                date
-                description
                 title
-                series
+                date
                 heroImage
+                description
                 series
                 seasonTitle
                 season

@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import { graphql } from 'gatsby';
+import { Link } from 'rebass';
 
 // components
 import SEO from '../components/SEO';
@@ -15,7 +16,14 @@ function ArticleLayout({ data, pageContext }) {
   const {
     markdownRemark: {
       html,
-      frontmatter: { title, description, heroImage, date },
+      frontmatter: {
+        title,
+        description,
+        heroImage,
+        date,
+        photographer,
+        unsplashAccount,
+      },
     },
     site: {
       siteMetadata: { longDescription: siteDescription },
@@ -60,6 +68,24 @@ function ArticleLayout({ data, pageContext }) {
           }}
           alt={title}
         />
+
+        <Box my={2}>
+          <Text fontFamily="heading" textAlign="center" fontStyle="italic">
+            Hero photo by{' '}
+            <Link
+              href={`https://unsplash.com/${unsplashAccount}`}
+              variant="link"
+            >
+              {photographer}
+            </Link>
+            , powered by{' '}
+            <Link href="https://unsplash.com/" variant="link">
+              unsplash
+            </Link>
+            .
+          </Text>
+        </Box>
+
         <Box width="inherit">
           <Article dangerouslySetInnerHTML={{ __html: html }} />
         </Box>

@@ -7,7 +7,9 @@ import ArticleCard from './ArticleCard';
 
 function ArticleListWithTitle({ title, list }) {
   // render list of recent articles
-  const articles = list.map(article => <ArticleCard {...article} />);
+  const articles = list.map(article => (
+    <ArticleCard {...article} key={article.id} />
+  ));
 
   return (
     <Box px={2}>

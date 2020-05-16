@@ -42,6 +42,12 @@ const lightTheme = {
       fontWeight: 'bold',
       borderBottom: '4px solid #adf4cf',
     },
+    link: {
+      color: '#1c1c1e',
+      textDecoration: 'none',
+      fontWeight: 'bold',
+      borderBottom: '4px solid #adf4cf',
+    },
     articleCard: {
       borderLeft: '4px solid #adf4cf',
       backgroundColor: '#fdfdfd',

@@ -8,7 +8,6 @@ import TabItem from './TabItem';
 
 function ArticleSeriesTab({ serie, seasons }) {
   const [selectedTab, setTab] = useState(seasons[0].title);
-
   const filteredArticleList = seasons
     .filter(({ title }) => title === selectedTab)
     .map(({ title, entries }) => (

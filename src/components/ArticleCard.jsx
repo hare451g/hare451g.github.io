@@ -6,7 +6,15 @@ import moment from 'moment';
 // constants
 import formats from '../constants/formats';
 
-function ArticleCard({ id, slug, heroImage, title, date, description }) {
+function ArticleCard({
+  id,
+  slug,
+  heroImage,
+  title,
+  date,
+  description,
+  episode,
+}) {
   const datePublished = moment(date).format(formats.ARTICLE_TIMESTAMP);
 
   return (

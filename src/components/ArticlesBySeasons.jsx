@@ -6,7 +6,12 @@ import ArticleSeriesTab from './ArticleSeriesTab';
 
 function ArticlesBySeasons({ seriesBySeasons = [] }) {
   return seriesBySeasons.map(({ serie, seasons }) => (
-    <Flex width={['100%', '100%', 720]} m="auto" flexDirection="column">
+    <Flex
+      width={['100%', '100%', 720]}
+      m="auto"
+      flexDirection="column"
+      key={`serie-${serie}`}
+    >
       <Text
         fontFamily="heading"
         fontSize={[4, 5, 6]}

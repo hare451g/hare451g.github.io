@@ -7,8 +7,8 @@ photographer: Paul Esch-Laurent
 unsplashAccount: pinjasaur
 series: js101
 seasonTitle: intro
-season: 1
-episode: 0
+season: 0
+episode: 1
 isPublished: true
 ---
 
