@@ -40,34 +40,32 @@ Oke tanpa basa basi lagi berikut edisi yang tersedia dan yang akan tersedia:
 
 ### Basic Functions
 
-- Functions [*belum tersedia*]
-- Function Vs Arrow Functions [*belum tersedia*]
-- Scope - const / var / let [*belum tersedia*]
-- Callback Functions [*belum tersedia*]
+- [Functions](/js101/functions/)
+- [Functions dan Arrow Functions](/js101/functions/1-arrow-function/)
+- [Scope of Variables](/js101/functions/2-scope/)
+- [Callback Function](/js101/functions/3-callback)
 
 ### Controlling Your Program
 
-- Branching ( If - Else ) [*belum tersedia*]
-- Branching ( Switch - Case ) [*belum tersedia*]
-- Looping ( for ) [*belum tersedia*]
-- Looping ( for in ) [*belum tersedia*]
-- Looping ( for of ) [*belum tersedia*]
-- Looping ( while ) [*belum tersedia*]
+- Branching (if-else) [*belum tersedia*]
+- Branching (switch-case) [*belum tersedia*]
+- Looping (for) [*belum tersedia*]
+- Looping (for-in) [*belum tersedia*]
+- Looping (for-of) [*belum tersedia*]
+- Looping (while) [*belum tersedia*]
 
 ### Having fun with Array
 
-- Having fun with Array ( Mutations ) [*belum tersedia*]
-- Having fun with Array ( Immutable ) [*belum tersedia*]
-- Having fun with Array ( Map ) [*belum tersedia*]
-- Having fun with Array ( For Each ) [*belum tersedia*]
-- Having fun with Array ( Filter ) [*belum tersedia*]
-- Having fun with Array ( Reduce ) [*belum tersedia*]
+- Map [*belum tersedia*]
+- For Each [*belum tersedia*]
+- Filter [*belum tersedia*]
+- Reduce [*belum tersedia*]
 
 ### Asyncronous Programming
 
-- Asyncronous - Callback [*belum tersedia*]
-- Asyncronous - Promise [*belum tersedia*]
-- Asyncronous - Async function [*belum tersedia*]
+- Callback [*belum tersedia*]
+- Promise [*belum tersedia*]
+- Async function [*belum tersedia*]
 
 ### Functional Programming
 

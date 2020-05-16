@@ -1,5 +1,5 @@
 ---
-title: Function dan Arrow Function
+title: Functions dan Arrow Functions
 date: 2020-05-12
 description: function biasa dan function yang disimpan dalam variable anonymous function, gitu deh.
 heroImage: https://images.unsplash.com/photo-1508921234172-b68ed335b3e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80

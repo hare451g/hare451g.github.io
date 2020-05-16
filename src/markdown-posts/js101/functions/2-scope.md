@@ -1,5 +1,5 @@
 ---
-title: Jangkauan variabel di function
+title: Scope of Variables
 date: 2020-05-15
 description: Sampai sejauh mana variable dapat diakses?
 heroImage: https://images.unsplash.com/photo-1473075109809-7a17d327bdf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
