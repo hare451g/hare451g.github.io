@@ -10,6 +10,8 @@ function NavigationBar() {
       sx={{
         boxShadow: 'small',
         position: 'fixed',
+        backgroundColor: 'rgba(255,255,255, 0.7)',
+        backdropFilter: 'saturate(180%) blur(20px)',
         top: 0,
         width: '100%',
       }}
