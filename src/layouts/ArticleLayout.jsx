@@ -1,16 +1,17 @@
 import React from 'react';
 import moment from 'moment';
 import { graphql } from 'gatsby';
-import { Link } from 'rebass';
+import { Link, Box, Flex, Heading, Text } from 'rebass';
 
 // components
 import SEO from '../components/SEO';
 import Article from '../components/Article';
 
+// constants
+import formats from '../constants/formats';
+
 // Layout
 import HomeLayout from './HomeLayout';
-import { Box, Flex, Heading, Text } from 'rebass';
-import formats from '../constants/formats';
 
 function ArticleLayout({ data, pageContext }) {
   const {
@@ -103,6 +104,10 @@ export const query = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      id
+      fields {
+        slug
+      }
       frontmatter {
         title
         date
