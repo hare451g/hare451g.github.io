@@ -3,7 +3,7 @@ const lightTheme = {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   colors: {
     brand: '#adf4cf',
-    background: '#fbfbfb',
+    background: '#fafafa',
     text: '#1c1c1e',
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256],
@@ -33,13 +33,13 @@ const lightTheme = {
   },
   variants: {
     navbar: {
-      backgroundColor: '#fdfdfd',
       borderBottom: '1px solid #eee',
-      py: 2,
-      px: 2,
+      backgroundColor: 'rgba(255,255,255, 0.7)',
+      backdropFilter: 'saturate(180%) blur(20px)',
+      px: 1,
     },
     footer: {
-      backgroundColor: '#fdfdfd',
+      backgroundColor: '#f5f5f7',
       borderTop: '1px solid #eee',
       py: 2,
       px: 2,
@@ -56,9 +56,9 @@ const lightTheme = {
       fontFamily: "'Inter', sans-serif",
     },
     articleCard: {
-      borderLeft: '4px solid #adf4cf',
-      backgroundColor: '#fdfdfd',
-      boxShadow: '0 0 4px rgba(0, 0, 0, .125)',
+      backgroundColor: '#f5f5f7',
+      border: '1px solid #dedede',
+      borderRadius: 8,
     },
   },
   text: {},

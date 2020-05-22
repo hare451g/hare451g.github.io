@@ -79,10 +79,12 @@ function Footer() {
         justifyContent="space-between"
         width={['100%', '100%', 720]}
         m="auto"
-        my={4}
+        pt={2}
+        mb={1}
+        sx={{ borderTop: '1px solid #eee' }}
       >
         <Text fontFamily="body">
-          &copy; {moment().year()} Hendra 'hare' Sadewa
+          &copy; {moment().year()} | Hendra 'hare' Sadewa
         </Text>
       </Flex>
     </Flex>

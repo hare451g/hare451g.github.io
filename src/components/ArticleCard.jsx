@@ -18,10 +18,6 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
         variant="articleCard"
         justifyContent="space-between"
         bg="background"
-        sx={{
-          borderRadius: 8,
-          boxShadow: 'medium',
-        }}
       >
         <Flex
           flexDirection="column"
@@ -43,7 +39,7 @@ function ArticleCard({ id, slug, heroImage, title, date, description }) {
               {description}
             </Text>
           </Flex>
-          <Text fontFamily="monospace" color="text" fontSize={[1, 2, 1]}>
+          <Text fontFamily="body" color="text" fontSize={[1, 2, 1]}>
             <GrCalendar /> {datePublished}
           </Text>
         </Flex>

@@ -9,12 +9,12 @@ import HomeLayout from '../layouts/HomeLayout';
 
 // hooks
 import useSiteMetadata from '../hooks/useSiteMetadata';
-import useSiteLogo from '../hooks/useSiteLogo';
+import useLocalImage from '../hooks/useLocalImage';
 import useAllBlogEntriesQuery from '../hooks/useAllBlogEntriesQuery';
 
 function BlogPage() {
   const { description, longDescription } = useSiteMetadata();
-  const siteLogo = useSiteLogo();
+  const { siteLogo } = useLocalImage();
   const { groupBySeason } = useAllBlogEntriesQuery();
   const seriesBySeasons = groupBySeason();
 

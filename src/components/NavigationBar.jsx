@@ -1,17 +1,19 @@
 import React from 'react';
 import { Flex, Box, Heading } from 'rebass';
+import { GrCatalog, GrHome, GrCircleInformation } from 'react-icons/gr';
+
+import useLocalImage from '../hooks/useLocalImage';
 
 import NavLink from './NavLink';
 
 function NavigationBar() {
+  const { siteLogo } = useLocalImage();
+
   return (
     <Box
       variant="navbar"
       sx={{
-        boxShadow: 'small',
         position: 'fixed',
-        backgroundColor: 'rgba(255,255,255, 0.7)',
-        backdropFilter: 'saturate(180%) blur(20px)',
         top: 0,
         width: '100%',
       }}
@@ -25,17 +27,25 @@ function NavigationBar() {
       >
         <Flex alignItems="center" justifyContent="space-between">
           <NavLink to="/">
-            <Box>
-              <Heading fontFamily="heading" fontSize={2}>
+            <Flex alignItems="center">
+              <img src={siteLogo} height={32} alt="author" />
+              <Heading fontFamily="heading" fontSize={2} pl={2}>
                 Hendra Sadewa
               </Heading>
-            </Box>
+            </Flex>
           </NavLink>
         </Flex>
 
         <Flex alignItems="center">
-          <NavLink to="/blog">blog</NavLink>
-          <NavLink to="/about">about</NavLink>
+          <NavLink to="/">
+            <GrHome alt="home" size={18} />
+          </NavLink>
+          <NavLink to="/blog">
+            <GrCatalog alt="blog" size={18} />
+          </NavLink>
+          <NavLink to="/about">
+            <GrCircleInformation alt="about" size={18} />
+          </NavLink>
         </Flex>
       </Flex>
     </Box>

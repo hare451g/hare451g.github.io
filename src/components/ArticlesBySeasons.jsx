@@ -17,7 +17,7 @@ function ArticlesBySeasons({ seriesBySeasons = [] }) {
         fontSize={[4, 5, 6]}
         textAlign="center"
         px={[1, 1, 5]}
-        py={4}
+        pb={4}
         fontWeight="heading"
         sx={{ textTransform: 'uppercase' }}
       >

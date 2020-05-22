@@ -39,8 +39,8 @@ function ArticleLayout({ data, pageContext }) {
         pathname={pageContext.slug}
         image={heroImage}
       />
-      <Flex width="inherit" flexDirection="column" px={[3, 2, 3]}>
-        <Heading fontSize={5} textAlign="center" pt={[1, 2, 4]} pb={2}>
+      <>
+        <Heading fontSize={5} textAlign="center" pb={2} pt={3}>
           {title}
         </Heading>
 
@@ -64,6 +64,7 @@ function ArticleLayout({ data, pageContext }) {
             backgroundSize: 'cover',
             height: [240, 320, 420],
             width: '100%',
+            minHeight: '320px',
             boxShadow: 'medium',
             borderRadius: 8,
           }}
@@ -90,7 +91,7 @@ function ArticleLayout({ data, pageContext }) {
         <Box width="inherit">
           <Article dangerouslySetInnerHTML={{ __html: html }} />
         </Box>
-      </Flex>
+      </>
     </HomeLayout>
   );
 }

@@ -42,8 +42,8 @@ function IndexPage() {
         title={`About ${siteMetadata.author}`}
         description={`Hendra Sadewa, Software engineer, javascript enthusiast | ${siteMetadata.description}`}
       />
-      <Box px={3}>
-        <Box width="inherit" pt={4} mb={4}>
+      <>
+        <Box width="inherit" mb={4}>
           <Heading mb={3} pb={2} sx={{ borderBottom: '1px solid #333' }}>
             Introduction
           </Heading>
@@ -87,7 +87,7 @@ function IndexPage() {
           </Heading>
           {professionalSkillList}
         </Box>
-      </Box>
+      </>
     </HomeLayout>
   );
 }

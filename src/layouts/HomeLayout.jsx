@@ -17,6 +17,8 @@ function HomeLayout({ children }) {
           m="auto"
           mt={5}
           flexDirection="column"
+          px={[3, 2, 3]}
+          pt={[2, 2, 4]}
         >
           {children}
         </Flex>
