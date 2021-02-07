@@ -13,6 +13,8 @@ import professionalSkills from '../constants/professionalSkills';
 import expertise from '../constants/expertise';
 
 function IndexPage() {
+  const workingDuration = new Date().getFullYear() - 2016;
+
   const siteMetadata = useSiteMetadata();
 
   const workingExperienceList = workExperiences.map(exp => (
@@ -48,22 +50,15 @@ function IndexPage() {
             Introduction
           </Heading>
           <Text fontFamily="body" fontSize={2} lineHeight={1.5} mb={3}>
-            My name is Hendra, Nice to meet You! I'm a Software engineer
-            specialized in JavaScript (ES6/Node.Js) and React. I have great
-            passion in functional programming, and web development. Currently
-            working fulltime as Front-end Developer at Hara, but I do some
-            freelance jobs and writing about tech too.
+            My name is Hendra, Nice to meet You! I'm a Software engineer mostly
+            write code in JavaScript (ES6/Node.Js) and React. I have great
+            passion in web development.
           </Text>
           <Text fontFamily="body" fontSize={2} lineHeight={1.5} mb={3}>
-            I have 3+ years (and counting!) of expertise in web development,
-            mainly using React JS and modern javascript to deliver
-            business-driven web or web-applications with solid, tested, and
-            scalable architecture design. I get used to coding with clean,
-            error-safe, and testable code, with a Functional Programming
-            paradigm.
-          </Text>
-          <Text fontFamily="body" fontSize={2} lineHeight={1.5} mb={3}>
-            Also, I'm a minimalist.
+            I have {workingDuration}+ years of experience in writing code for
+            building website, webservice, and mobile apps. Currently working as
+            Fulltime Front-end engineer at{' '}
+            <a href="https://stockbit.com">Stockbit</a>.
           </Text>
         </Box>
 

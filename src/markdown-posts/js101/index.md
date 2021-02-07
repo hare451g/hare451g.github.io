@@ -47,7 +47,7 @@ Oke tanpa basa basi lagi berikut edisi yang tersedia dan yang akan tersedia:
 
 ### Controlling Your Program
 
-- Branching (if-else) [*belum tersedia*]
+- [Branching (if-else)](/js101/control/1-if-else/)
 - Branching (switch-case) [*belum tersedia*]
 - Looping (for) [*belum tersedia*]
 - Looping (for-in) [*belum tersedia*]

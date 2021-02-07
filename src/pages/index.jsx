@@ -28,10 +28,19 @@ function IndexPage() {
       <Box mb={4}>
         <Heading mb={2}>Hi! I'm Hendra</Heading>
         <Text fontFamily="body" fontSize={2} lineHeight={1.5}>
-          Software engineer specialized in JavaScript (ES6/Node.Js) and React. I
-          have great passion in functional programming, and web development.
-          Currently working fulltime as Front-end Developer at Hara, but I do
-          some freelance jobs and writing about tech too.
+          <p>
+            My name is Hendra, Nice to meet You! I'm a Software engineer mostly
+            write code in JavaScript (ES6/Node.Js) and React. I have great
+            passion in web development.
+          </p>
+          <p>
+            This is my personal blog, contains my own personal thoughts and
+            tutorials not related to any organizations and instances. This blog
+            currently written in Bahasa Indonesia (I will working for english
+            version soon :D ).
+          </p>
+
+          <p>Please enjoy your stay 🛋️</p>
         </Text>
       </Box>
 
