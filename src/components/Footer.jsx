@@ -40,7 +40,7 @@ function Footer() {
           <Box pb={2}>
             <Heading fontSize={2}>Hendra 'hare' Sadewa </Heading>
             <Text fontFamily="body">
-              Tech enthusiast, likes ThinkPads and weird music.
+              Tech enthusiast, writting programming tutorial. <a href="https://saweria.co/hare"> Buy me coffee ☕</a>
             </Text>
           </Box>
           <Box py={2}>
