@@ -1,10 +1,19 @@
 const workExperiences = [
   {
+    companyName: 'Stockbit',
+    role: 'Front-End Developer',
+    start: '2020-06-04',
+    end: '-',
+    isPresent: true,
+    descriptions:
+      'Building Stockbit.com, Indonesia\'s most populated stock market platform' ,
+  },
+  {
     companyName: 'Dattabot / Hara Token',
     role: 'Front-End Developer',
     start: '2018-05-01',
-    end: '-',
-    isPresent: true,
+    end: '2020-06-02',
+    isPresent: false,
     descriptions:
       'Building hara for business platform to monitor loan applications, land ownership, and risk management for micro-loan (KUR) product. Used by BNI & BTPNS for massive data procesing',
   },
