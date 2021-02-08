@@ -37,27 +37,8 @@ module.exports = {
         path: `${__dirname}/src/markdown-posts`,
       },
     },
+    // remarks plugins
     `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `hendrasadewa.site`,
-        short_name: `hareblog`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#ffffff`,
-        display: `minimal-ui`,
-        icon: `src/images/Logo.svg`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `ca-pub-3742991243246749`,
-      },
-    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -78,6 +59,39 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    // Sharp Plugins
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `hendrasadewa.site`,
+        short_name: `hareblog`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
+        display: `minimal-ui`,
+        icon: `src/images/Logo.svg`,
+      },
+    },
+    // Google Plugins
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-3742991243246749`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          'UA-157500163-1', // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
   ],
