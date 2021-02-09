@@ -24,7 +24,13 @@ const Article = styled.article`
 
   a {
     text-decoration-color: ${props => props.theme.colors.brand};
+    text-decoration-thickness: 4px;
+    font-weight: bold;
     color: ${props => props.theme.colors.text};
+  }
+
+  u {
+    background-color: ${props => props.theme.colors.brand};
   }
 
   * > img {
