@@ -44,7 +44,7 @@ Semoga artikel ini dapat membantu kalian.
 
 ![yeah](https://media.giphy.com/media/tyxovVLbfZdok/giphy.gif)
 
-Cheers 🥂, selamat sekarang sudah bisa buka [reddit](https://reddit.com), mari kita buka [4chan](https://4chan.org/g).
+Cheers 🥂, selamat sekarang sudah bisa buka [reddit](https://reddit.com).
 
 ~~COPAS LAGI?! wqwqwqwq~~
 
