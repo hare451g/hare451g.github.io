@@ -38,4 +38,4 @@ Untuk setting DoH di firefox, ikuti langkah berikut:
 
 ![yeah](https://media.giphy.com/media/tyxovVLbfZdok/giphy.gif)
 
-Cheers 🥂, selamat sekarang sudah bisa buka [reddit](https://reddit.com), mari kita buka [4chan](https://4chan.org/g).
+Cheers 🥂, selamat sekarang sudah bisa buka [reddit](https://reddit.com).
